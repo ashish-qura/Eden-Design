@@ -128,7 +128,7 @@
   .slide-content {
     top: 30%;
     transform: translateY(-30%);
-    left: calc(9vw + (.7) * 16vw);
+    
   }
 }
 @media (max-width: 630px) {
