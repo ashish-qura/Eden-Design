@@ -100,11 +100,7 @@
   display: flex;
   flex-direction: column;
 }
-@media (max-width: 1000px) {
-  .slide-content {
-    left: calc(13vw + 1rem);
-  }
-}
+
 @media (max-height: 730px) {
   .slide-content {
     top: 30%;
