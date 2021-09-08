@@ -100,7 +100,11 @@
   display: flex;
   flex-direction: column;
 }
-
+@media (max-width: 1000px) {
+  .slide-content {
+    width: initial;
+  }
+}
 @media (max-height: 730px) {
   .slide-content {
     top: 30%;
