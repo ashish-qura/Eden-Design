@@ -892,21 +892,23 @@ overflow: hidden;
 /* Responsive Start */
 
 @media screen and (max-width: 768px) {
+  .f-pcm {
+    padding: 30px;
+  }
   .content-slider {
     padding: 7rem 4rem 4rem 4rem;
     top: 100%;
     left: 50%;
-}
+  }
   .prev::after, .next::after {
     background: #fff;
-}
-.prev::before, .next::before {
-  border-right-color: rgb(255, 255, 255);
-}
-.next::before {
-  border-left-color: rgb(255, 255, 255);
-}
-
+  }
+  .prev::before, .next::before {
+    border-right-color: rgb(255, 255, 255);
+  }
+  .next::before {
+    border-left-color: rgb(255, 255, 255);
+  }
   .nav_arrows {
     position: absolute;
     left: 50%;
