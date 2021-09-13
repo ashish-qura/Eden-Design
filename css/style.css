@@ -24,6 +24,10 @@ ul {
   margin: 0;
   padding: 0;
   }
+  a {
+    color: initial;
+    text-decoration: none;
+}
 /* Button */
 
 
@@ -892,6 +896,12 @@ overflow: hidden;
 /* Responsive Start */
 
 @media screen and (max-width: 768px) {
+  .pre-head::before {
+    left: -45px;
+}
+  .eden-about-us-img {
+    padding-bottom: 50px;
+}
   .f-pcm {
     padding: 30px;
   }
