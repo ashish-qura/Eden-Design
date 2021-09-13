@@ -409,7 +409,6 @@ font-weight: 600;
 }
 .content-slider {
   position: absolute;
-  bottom: -50px;
   right: 0;
   width: 361px;
   height: 350px;
@@ -418,6 +417,9 @@ font-weight: 600;
   color: white;
   text-align: left;
   background-color: black;
+  transform: translate(-50%, -50%);
+  top: 100%;
+  left: 50%;
 }
 .content-slider> h1 {
 	text-overflow: ellipsis;
@@ -477,10 +479,10 @@ li.current .content-slider p {
 ------------------------------------*/
 .nav_arrows
 {
-    position: absolute;
-    left: 50%;
-    top: 100%;
-    transform: translate(-144%, 0);
+  position: absolute;
+  left: 50%;
+  top: -10%;
+  transform: translate(-50%, -50%);
 }
 li.prev_slide .image-slider-work {
 	clip: rect(0, 0, 50rem, 0);
@@ -890,6 +892,28 @@ overflow: hidden;
 /* Responsive Start */
 
 @media screen and (max-width: 768px) {
+  .content-slider {
+    padding: 7rem 4rem 4rem 4rem;
+    top: 100%;
+    left: 50%;
+}
+  .prev::after, .next::after {
+    background: #fff;
+}
+.prev::before, .next::before {
+  border-right-color: rgb(255, 255, 255);
+}
+.next::before {
+  border-left-color: rgb(255, 255, 255);
+}
+
+  .nav_arrows {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 70%;
+    color: white;
+}
   .navbar-brand {
     margin-left: 20px;
   }
@@ -911,6 +935,14 @@ overflow: hidden;
   .header-area
   {
     display: none;
+  }
+  .pr-cs
+  {
+    padding-right: initial;
+    padding-bottom: 40px;
+  }
+  .about-us-eden, .what-we-do-eden, .our-work-eden, .testimonial-eden {
+    padding: 50px 0;
   }
 }
 @media screen and (min-width: 767px) {
