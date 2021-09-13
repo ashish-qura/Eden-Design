@@ -881,6 +881,10 @@ overflow: hidden;
   line-height: 2.5rem;
   margin: 0;
 }
+#burgerBtn
+{
+  display: none;
+}
 
 /* Footer End */
 /* Responsive Start */
@@ -895,6 +899,18 @@ overflow: hidden;
   }
   .navbar.fixed-top .navbar-nav {
     background: transparent;
+  }
+  #mobileView
+  {
+    display: block;
+  }
+  #burgerBtn
+  {
+    display: block;
+  }
+  .header-area
+  {
+    display: none;
   }
 }
 @media screen and (min-width: 767px) {
