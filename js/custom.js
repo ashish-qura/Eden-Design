@@ -1,3 +1,72 @@
+var menu = ['Viraj Sanghavi', 'Tirth Patel', 'Swapnil Shah']
+var mySwiper = new Swiper ('.swiper-container', {
+	 autoplay: {
+    delay: 5000,
+  },
+  direction: 'vertical',
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+			
+			clickable: true,
+        renderBullet: function (index, className) {
+          return '<span class="' + className + '">' + (menu[index]) + '</span>';
+        },
+    },
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  })
+
+
+// Animated input text for footer
+timeout_var = null;
+
+function typeWriter(selector_target, text_list, placeholder = false, i = 0, text_list_i=0, delay_ms=200) {
+    if (!i) {
+        if (placeholder) {
+            document.querySelector(selector_target).placeholder = "";
+        }
+        else {
+            document.querySelector(selector_target).innerHTML = "";
+        }
+    }
+    txt = text_list[text_list_i];
+    if (i < txt.length) {
+        if (placeholder) {
+            document.querySelector(selector_target).placeholder += txt.charAt(i);
+        }
+        else {
+            document.querySelector(selector_target).innerHTML += txt.charAt(i);
+        }
+        i++;
+        setTimeout(typeWriter, delay_ms, selector_target, text_list, placeholder, i, text_list_i);
+    }
+    else {
+        text_list_i++;
+        if (typeof text_list[text_list_i] === "undefined")  {
+            setTimeout(typeWriter, (delay_ms*5), selector_target, text_list, placeholder);
+        }
+        else {
+            i = 0;
+            setTimeout(typeWriter, (delay_ms*3), selector_target, text_list, placeholder, i, text_list_i);
+        }
+    }
+}
+
+text_list = [
+    "John Duo"
+];
+
+return_value = typeWriter("#animateInput", text_list, true);
+
+// Animate Input text End
+
+
+
 var app = new Vue({
     el: '#app',
     data: {
@@ -23,7 +92,7 @@ var app = new Vue({
                 headlineFirstLine: "Building Design",
 				buttonName: "Design",
                 // headlineSecondLine: "Ultricies",
-                bgImg: "https://i.postimg.cc/t4RBtrnQ/slide2.jpg",
+                bgImg: "https://i.postimg.cc/xCZnMqKs/zq-lee-Dcy-L0-Io-CY0-A-unsplash.jpg",
               
             }
         ]
@@ -226,6 +295,9 @@ jQuery(function($) {
 
 })();
 
+// Main Banner slider End
+
+
 // Testimonial
 $(document).ready(function(){
     $("#testimonial-slider").owlCarousel({
@@ -242,3 +314,25 @@ $(document).ready(function(){
         autoPlay:false
     });
 });
+
+
+// Navbar For Mobile
+
+var burgerBtn = document.getElementById('burgerBtn');
+var mobile = document.getElementById('mobileView');
+var demo1 = document.getElementById('demo11');
+
+
+burgerBtn.addEventListener('click', function() {
+  mobile.classList.toggle('navigation');
+}, false);
+
+demo1.addEventListener('click', function() {
+  demo1.classList.add('active');
+  demo2.classList.remove('active');
+  demo3.classList.remove('active');
+  mobile.classList.add('demo1');
+  mobile.classList.remove('demo2', 'demo3', 'navigation');
+}, false);
+
+// Navbar For Mobile End
