@@ -277,27 +277,27 @@
                 
                     <div class="col-12 row">
                         <div class="input col-lg-6 col-md-6">
-                            <input type="text" id="animateInput" class="input-field eden-inf" value="" required/>
+                            <input type="text" id="name-typewirte" class="input-field eden-inf" value="" required/>
                             <label class="input-label">Name</label>
                         </div>
                              <div class="input col-lg-6 col-md-6">
-                            <input type="text" class="input-field eden-inf" value="" required/>
+                            <input type="text" id="email-typewirte" class="input-field eden-inf" value="" required/>
                             <label class="input-label">Email</label>
                         </div>
                      </div>
                      <div class="col-12 row">
                         <div class="input col-lg-6 col-md-6">
-                            <input type="text" class="input-field eden-inf" value="" required/>
+                            <input type="text" id="phone-typewirte" class="input-field eden-inf" value="" required/>
                             <label class="input-label">Phone Number</label>
                         </div>
                              <div class="input col-lg-6 col-md-6">
-                            <input type="text" class="input-field eden-inf" value="" required/>
+                            <input type="text" id="company-typewirte" class="input-field eden-inf" value="" required/>
                             <label class="input-label">Company Name</label>
                         </div>
                      </div>
                      <div class="col-12 row">
                         <div class="input sendBtn-form">
-                            <textarea class="input-field eden-inf" rows="2" value="My project is related.."></textarea>
+                            <textarea class="input-field eden-inf" id="comment-typewirte" rows="2" value="My project is related.."></textarea>
                             <label class="input-label">Write Message</label>
                             <span class="form-submit-a">
                             <a class="arrow-up" href="#">
@@ -336,11 +336,9 @@
                 <p class="content-detail-sm mb-4 footer-address">
                     Ahmedabad-380007 
                     </p>
-            <p class="content-detail-sm text-white footer-address">
-                +91 - 1234567890 
-              </p>
-                <p class="content-detail-sm text-white footer-address">
-                    projects@edenconsultants.in</p>
+            
+                <p> <a href="tel:+911234567890" class="content-detail-sm text-white footer-address">+91 - 1234567890</a></p>
+               <p> <a href="mailto:projects@edenconsultants.in" class="content-detail-sm text-white footer-address">  projects@edenconsultants.in</a></p>
 </div>
 <div class="col-12 text-center pt-5 pb-4">
     <p class="content-detail-sm">All rights reserved. © 2018-2021 EDEN Design Consultants.</p>
@@ -358,10 +356,19 @@
     <script src="js/bootstrap.min.js"></script>
     <!-- swiper js -->
     <script src="js/swiperjs.js"></script>
+    <script src="js/typewriter.js"></script>
     <!-- Swiperjs end -->
     <script src="js/vue.min.js"></script>
     <script src="js/custom.js"></script>
+    
     <!-- script End -->
+    <script>
+        new TypeWriter('#email-typewirte', ['johnduo@email.com']);
+        new TypeWriter('#name-typewirte', ['John Duo']);
+        new TypeWriter('#phone-typewirte', ['98765 43210']);
+        new TypeWriter('#company-typewirte', ['eden design']);
+        new TypeWriter('#comment-typewirte', ['let us know your thoughts']);
+    </script>
 
 </body>
 </html>
