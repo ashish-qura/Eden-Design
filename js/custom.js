@@ -1,3 +1,5 @@
+
+
 // Testimonial Slider
 
 var menu = ['Viraj Sanghavi', 'Tirth Patel', 'Swapnil Shah']
@@ -42,7 +44,7 @@ var app = new Vue({
                 headlineFirstLine: "About Eden",
                 // headlineSecondLine: "s",
 				buttonName: "Eden",
-                bgImg: "https://i.postimg.cc/4N3GVzPB/main-slider-img.png",
+                bgImg: "https://i.postimg.cc/mrkth756/Layer-1.jpg",
           
             },
             {

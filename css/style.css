@@ -44,7 +44,7 @@ ul {
     
     height: 50px;
     padding: 13px 25px;
-    border: 2px solid rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
     font-family: 'Lato', sans-serif;
     font-weight: 500;
     background: transparent;
@@ -58,7 +58,18 @@ ul {
    z-index: 1;
    font-size: 1.2rem;
  }
- .btn-13:after {
+ .btn--control {
+  color: white;
+   z-index: 1;
+   font-size: 1.2rem;
+   padding: 2.8rem 5.5rem;
+ }
+ .btn--control-footer {
+  color: rgb(0, 0, 0);
+   z-index: 1;
+   font-size: 1.2rem;
+ }
+ .btn-13:after, .btn--control:after {
    position: absolute;
    content: "";
    width: 100%;
@@ -66,17 +77,33 @@ ul {
    bottom: 0;
    left: 0;
    z-index: -1;
-   background: #000;
+   background: rgb(255, 255, 255);
    transition: all 0.3s ease;
  }
- .btn-13:hover {
-   color: rgb(255, 255, 255);
+ .btn--control-footer::after
+ {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background: rgb(0, 0, 0);
+  transition: all 0.3s ease;
  }
- .btn-13:hover:after {
+ .btn--control-footer:hover
+ {
+color: white;
+ }
+ .btn-13:hover, .btn--control:hover {
+   color: rgb(0, 0, 0);
+ }
+ .btn-13:hover:after,  .btn--control:hover:after, .btn--control-footer:hover::after {
    top: 0;
    height: 100%;
  }
- .btn-13:active {
+ .btn-13:active,  .btn--control:active {
    top: 2px;
  }
  
@@ -86,7 +113,7 @@ ul {
 .navbar {
   position: absolute;
   left: 0;
-  top: 0;
+  top: 15px;
   padding: 0;
   width: 100%;
 
@@ -186,11 +213,12 @@ ul {
 }
 .navbar.fixed-top {
   position: fixed;
+  top: 0;
   -webkit-backdrop-filter: blur(8px);
   backdrop-filter: blur(8px);
   -webkit-animation: navbar-animation 0.6s;
   animation: navbar-animation 0.6s;
-  background-color: rgb(0 0 0 / 33%);
+  background-color: rgb(0 0 0 / 80%);
 }
 .navbar.fixed-top.navbar-dark .navbar-nav .nav-link.active {
   color: #faad00;
@@ -201,7 +229,7 @@ ul {
 
 .navbar-logo
 {
-    width: 200px;
+    width: 280px;
 }
 /* Navigation End */
 
@@ -214,16 +242,51 @@ ul {
 {
   padding: 50px 50px 0 100px;
 }
-.about-us-eden, .what-we-do-eden, .our-work-eden, .testimonial-eden
+.about-us-eden, .what-we-do-eden, .our-work-eden, .testimonial-slider-cover
 {
- padding: 100px 0; 
+ padding: 100px 30px; 
 }
 .p-sm 
 {
   font-size: 1.2rem;
   color: #c9c9c9;
 }
+.content_button
+{
+  width: fit-content;
+    border-bottom: 3px solid;
+}
 
+.border-black 
+{
+  border-color: black;
+}
+.border-white
+{
+  border-color: white;
+}
+
+.magnet {
+  display: inline-block;
+  padding: 20px;
+  border-radius: 100px;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  transition: all .5s ease;
+  font-size: 1.5rem;
+  margin-left: 20px;
+}
+.magnet-mouse-active {
+  background-color: #ff8800;
+  color: white;
+}
+.link-text 
+{
+  font-size: 1.2rem;
+    padding-left: 3px;
+    padding-right: 3px;
+    font-weight: 600;
+}
 /* Mobile Responsive Navbar */
 
 #mobileView {
@@ -470,10 +533,10 @@ ul {
   content: "";
   position: absolute;
   height: 2px;
-  width: 39px;
+  width: 25px;
   top: 11px;
   background-color: orange;
-  left: -61px;
+  left: -30px;
 }
 .main-head-eden
 {
@@ -780,7 +843,10 @@ li.prev_slide .image-slider-work {
 	display: inline-block;
 	font-size: 2rem;
 	font-family: serif;
-	font-style: italic;
+}
+.counter span:first-child
+{
+  font-weight: 600;
 }
 .counter span:last-child::before {
 	content: '/';
@@ -799,7 +865,7 @@ li.prev_slide .image-slider-work {
 
 .testimonials-wrapper {
   position: relative;
-  padding: 17px 70px 85px 23%;
+  padding: 17px 70px 85px 18%;
   }
   
   .testimonial-swiper2
@@ -830,7 +896,7 @@ li.prev_slide .image-slider-work {
       position: absolute;
       top: 0;
       height: calc(100% - 80px);
-      left: 0;
+      left: 1%;
       width: 20% !important;
   }
   .testimonials-wrapper .testimonials-item {
@@ -964,7 +1030,7 @@ li.prev_slide .image-slider-work {
 
 .footer-section
 {
-  margin-top: 200px;
+  margin-top: 100px;
 }
 .card-form {
   padding: 2rem 1rem 0;
@@ -1205,7 +1271,7 @@ overflow: hidden;
     margin-top: 100px;
   }
   .pre-head::before {
-    left: -45px;
+    left: -29px;
 }
   .eden-about-us-img {
     padding-bottom: 50px;

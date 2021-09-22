@@ -35,7 +35,7 @@
   background-blend-mode: darken;
 }
 .slide-wrapper:nth-child(1) {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 .slide-wrapper:nth-child(1):before {
     background-color: rgba(0, 0, 0, 0.2);
@@ -44,7 +44,7 @@
   text-shadow: 2px 5px 45px rgba(85, 96, 113, 0.25);
 }
 .slide-wrapper:nth-child(2) {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 .slide-wrapper:nth-child(2):before {
   background-color: rgba(0, 0, 0, 0.2);
@@ -53,7 +53,7 @@
   text-shadow: 2px 5px 45px rgba(121, 142, 152, 0.2);
 }
 .slide-wrapper:nth-child(3) {
- background-color: rgba(0, 0, 0, 0.2);
+ background-color: rgba(0, 0, 0, 0.7);
 }
 .slide-wrapper:nth-child(3):before {
  background-color: rgba(0, 0, 0, 0.2);
