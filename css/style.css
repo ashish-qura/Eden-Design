@@ -349,7 +349,7 @@ color: white;
 }
 
 #burgerBtn {
-  border-top: 2px solid #f85051;
+  border-top: 2px solid #faad00;
   height: 25px;
   width: 30px;
   box-sizing: border-box;
@@ -371,7 +371,7 @@ color: white;
   height: 2px;
   width: 30px;
   left: 0;
-  background: #f85051;
+  background: #faad00;
   top: 10px;
   -webkit-transition: all 0.3s ease-in;
   -moz-transition: all 0.3s ease-in;
@@ -386,7 +386,7 @@ color: white;
   height: 2px;
   width: 30px;
   left: 0;
-  background: #f85051;
+  background: #faad00;
   bottom: 0;
   -webkit-transition: all 0.3s ease-in;
   -moz-transition: all 0.3s ease-in;
@@ -858,6 +858,10 @@ li.prev_slide .image-slider-work {
 @media screen and ( max-width: 550px ) {
 	.image-slider-work { width: 100%; }
 	.content-slider { padding-right: 2rem; }
+  .text-area-inf
+{
+  padding-right: 100px !important;
+}
 
 }
 
@@ -1151,7 +1155,9 @@ overflow: hidden;
   position: absolute;
   top: 0;
   right: 0;
+
 }
+
 .arrow-up {
   height: 40px;
   width: 40px;
@@ -1250,6 +1256,20 @@ overflow: hidden;
 
 /* Footer End */
 /* Responsive Start */
+@media only screen
+and (min-device-width : 480px)
+and (max-device-width : 1000px)
+and (orientation : landscape) {
+
+  .navbar-logo 
+  {
+    width: 200px;
+  }
+  .card-cs>p
+  {
+    font-size: 1.2rem;
+  }
+}
 @media screen and (max-width: 1000px)
 {
   .testimonials-pagination-wrapper
