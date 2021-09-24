@@ -85,9 +85,9 @@
             <div class="controls-container">
               <button class="controls-button custom-btn btn--control " v-for="(slide, index) in slides" v-bind:class="{ active: index === currentSlide }" v-on:click="updateSlide(index)">{{ slide.buttonName }}</button>
             </div>
-            <div class="pagination-container">
+            <!-- <div class="pagination-container">
               <span class="pagination-item" v-for="(slide, index) in slides" v-bind:class="{ active: index === currentSlide }" v-on:click="updateSlide(index)"></span>
-            </div>
+            </div> -->
           </div>
     </div>
    
@@ -111,7 +111,7 @@
                
                
                 <div class="content_button border-black">
-                    <a href="#" class="btn-eden-target">
+                    <a href="#" class="btn-eden-target border-dark">
                         <span class="link-text">ABOUT US</span>
                         <i class="magnet fas fa-long-arrow-alt-right"></i></a>
                 </div>
@@ -201,6 +201,127 @@
 
 <!-- Our Work Section -->
 <section class="our-work-eden">
+<div class="container-fluid col-12">
+<div class="d-flex align-items-center">
+    <div class="col-lg-8 col-md-8 col-sm-12">
+    <div class="tab-content" id="v-pills-tabContent">
+      <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+          <div class="cd-slider">
+        <ul>
+          <li>
+            <div class="image-slider-work" style="background-image:url(https://images.unsplash.com/photo-1421809313281-48f03fa45e9f?crop=entropy&fit=crop&fm=jpg&h=675&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1000);"></div>
+            <div class="content-slider">
+                <h1>Runwal Bliss</h1>
+                <h4>Bopal, Ahmedabad</h4>
+                <p>Architect: <br>
+                  Architect Hafeez contractor <br>
+                  Developer:   <br>
+                  Runwal Real Estates Private Limited <br>
+                  Work Scope: <br>
+                  Lorem Ipsum</p>
+            </div>
+          </li>
+          <li>
+            <div class="image-slider-work" style="background-image:url(https://images.unsplash.com/uploads/1411724908903377d4696/2e9b0cb2?crop=entropy&fit=crop&fm=jpg&h=675&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1000);"></div>
+            <div class="content-slider">
+                <h1>Runwal Bliss</h1>
+                <h4>Bopal, Ahmedabad</h4>
+                <p>Architect: <br>
+                  Architect Hafeez contractor <br>
+                  Developer:   <br>
+                  Runwal Real Estates Private Limited <br>
+                  Work Scope: <br>
+                  Lorem Ipsum</p>
+            </div>
+          </li>
+       
+        </ul>
+      </div>
+     </div>
+      <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">   <div class="cd-slider">
+        <ul>
+          <li>
+            <div class="image-slider-work" style="background-image:url(https://images.unsplash.com/photo-1421809313281-48f03fa45e9f?crop=entropy&fit=crop&fm=jpg&h=675&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1000);"></div>
+            <div class="content-slider">
+                <h1>Runwal Bliss</h1>
+                <h4>Bopal, Ahmedabad</h4>
+                <p>Architect: <br>
+                  Architect Hafeez contractor <br>
+                  Developer:   <br>
+                  Runwal Real Estates Private Limited <br>
+                  Work Scope: <br>
+                  Lorem Ipsum</p>
+            </div>
+          </li>
+          <li>
+            <div class="image-slider-work" style="background-image:url(https://images.unsplash.com/uploads/1411724908903377d4696/2e9b0cb2?crop=entropy&fit=crop&fm=jpg&h=675&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1000);"></div>
+            <div class="content-slider">
+                <h1>Runwal Bliss</h1>
+                <h4>Bopal, Ahmedabad</h4>
+                <p>Architect: <br>
+                  Architect Hafeez contractor <br>
+                  Developer:   <br>
+                  Runwal Real Estates Private Limited <br>
+                  Work Scope: <br>
+                  Lorem Ipsum</p>
+            </div>
+          </li>
+       
+        </ul>
+      </div></div>
+      <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">   <div class="cd-slider">
+        <ul>
+          <li>
+            <div class="image-slider-work" style="background-image:url(https://images.unsplash.com/photo-1421809313281-48f03fa45e9f?crop=entropy&fit=crop&fm=jpg&h=675&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1000);"></div>
+            <div class="content-slider">
+                <h1>Runwal Bliss</h1>
+                <h4>Bopal, Ahmedabad</h4>
+                <p>Architect: <br>
+                  Architect Hafeez contractor <br>
+                  Developer:   <br>
+                  Runwal Real Estates Private Limited <br>
+                  Work Scope: <br>
+                  Lorem Ipsum</p>
+            </div>
+          </li>
+          <li>
+            <div class="image-slider-work" style="background-image:url(https://images.unsplash.com/uploads/1411724908903377d4696/2e9b0cb2?crop=entropy&fit=crop&fm=jpg&h=675&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1000);"></div>
+            <div class="content-slider">
+                <h1>Runwal Bliss</h1>
+                <h4>Bopal, Ahmedabad</h4>
+                <p>Architect: <br>
+                  Architect Hafeez contractor <br>
+                  Developer:   <br>
+                  Runwal Real Estates Private Limited <br>
+                  Work Scope: <br>
+                  Lorem Ipsum</p>
+            </div>
+          </li>
+       
+        </ul>
+      </div></div>
+
+    </div>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-12 our-service-right">
+    <p class="pre-head mb-4">
+      OUR WORKS
+    </p>
+    
+        <h2 class="main-head-eden mb-4">
+            Lorem ipsum dummy text
+        </h2>
+    <div class="nav flex-column nav-pills me-3 nav-wrapper-block" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+        <a class="arrow-swing cs-nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true"> Residential Project</a>
+        <a class="arrow-swing cs-nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Commercial Project</a>
+        <a class="arrow-swing cs-nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false"> Hotel Project</a>
+       </div>
+    </div>
+  </div>
+</div>
+</section>
+<!-- <section class="our-work-eden">
+   
     <div class="row align-items-center container-fluid mx-auto">
         
         <div class="col-lg-8 col-md-8 col-sm-12">
@@ -242,7 +363,7 @@
             
         </div>
     </div>
-</section>
+</section> -->
 
 <!-- Testimonial -->
 

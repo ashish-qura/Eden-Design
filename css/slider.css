@@ -73,6 +73,7 @@
   z-index: 2;
   height: 100%;
   overflow: hidden;
+  padding: 0 30px;
 }
 .slide-bg-text {
   font-family: "Playfair Display";
@@ -136,7 +137,8 @@
 }
 @media (max-width: 500px) {
   .slide-content-text p {
-    font-size: 3.5rem;
+    font-size: 8.5rem;
+    line-height: 11rem;
   }
 }
 .slide-content-text > p:last-child {
@@ -237,12 +239,20 @@
   z-index: 200;
   display: flex;
   bottom: 0;
-  right: 0;
+  right: 30px;
   align-items: flex-end;
 }
+@media (max-width: 730px) {
+  .controls-button {
+    padding: 1.2rem 1.4rem;
+    min-width: 13rem;
+  }
+}
+
 @media (max-width: 630px) {
   .controls-container {
-    display: none;
+    display: block;
+    right: initial;
   }
 }
 .controls-button {
@@ -254,12 +264,7 @@
     transition: 0.25s ease-in-out;
     outline: 0;
 }
-@media (max-width: 730px) {
-  .controls-button {
-    padding: 1.2rem 1.4rem;
-    min-width: 13rem;
-  }
-}
+
 .controls-button:not(.active):hover {
   color: #000;
   background-color: #fff;

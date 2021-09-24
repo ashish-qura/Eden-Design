@@ -35,21 +35,21 @@ var app = new Vue({
         slides: [
             {
                 headlineFirstLine: "EDEN- Our Story",
-				buttonName: "Story",
+				buttonName: "EDEN- OUR STORY",
                 // headlineSecondLine: "1",
-                bgImg: "https://i.postimg.cc/wjGj7WdX/sean-pollock-Ph-Yq704ffd-A-unsplash.jpg",
+                bgImg: "https://i.postimg.cc/mrkth756/Layer-1.jpg",
                 
             },
             {
                 headlineFirstLine: "About Eden",
                 // headlineSecondLine: "s",
-				buttonName: "Eden",
-                bgImg: "https://i.postimg.cc/mrkth756/Layer-1.jpg",
+				buttonName: "EDEN- OUR STORY",
+                bgImg: "https://i.postimg.cc/wjGj7WdX/sean-pollock-Ph-Yq704ffd-A-unsplash.jpg",
           
             },
             {
                 headlineFirstLine: "Building Design",
-				buttonName: "Design",
+				buttonName: "EDEN- OUR STORY",
                 // headlineSecondLine: "Ultricies",
                 bgImg: "https://i.postimg.cc/xCZnMqKs/zq-lee-Dcy-L0-Io-CY0-A-unsplash.jpg",
               
