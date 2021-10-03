@@ -137,8 +137,8 @@
 }
 @media (max-width: 500px) {
   .slide-content-text p {
-    font-size: 8.5rem;
-    line-height: 11rem;
+    font-size: 5.5rem;
+    line-height: 7rem;
   }
 }
 .slide-content-text > p:last-child {
