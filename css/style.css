@@ -16,6 +16,9 @@ p {
   line-height: 1.6;
   font-size: 16px;
 }
+a:hover {
+  color: #000000;
+}
 img
 {
   max-width: 100%;
@@ -58,13 +61,14 @@ ul {
   .btn-13 {
   color: white;
    z-index: 1;
-   font-size: 1.2rem;
+   font-size: 12px;
  }
  .btn--control {
   color: white;
    z-index: 1;
    font-size: 1.2rem;
-   padding: 40px;
+   width: 240px;
+   height: 90px;
    
  }
  .btn--control-footer {
@@ -88,7 +92,7 @@ ul {
   position: absolute;
   content: "";
   width: 100%;
-  height: 2px;
+  height: 4px;
   top: -1px;
   left: 0;
   z-index: -1;
@@ -132,6 +136,7 @@ color: white;
   color: black;
   border-radius: 0;
   border: none;
+  height: 35px;
   margin: 10px 0;
   font-size: 1.5rem;
   transition: 0.3s ease-in;
@@ -151,7 +156,7 @@ font-weight: 500;
 
 .arrow-swing:before {
   content: "";
-  width: 25px;
+  width: 15px;
   height: 2px;
   background: slategray;
   position: absolute;
@@ -164,11 +169,11 @@ font-weight: 500;
 
 .arrow-swing:hover:before {
   
-  width: 50px;
+  width: 30px;
 }
 .arrow-swing:hover:after {
   
-  left: 11px;
+  left: 0;
 }
 .arrow-swing:after {
   content: "";
@@ -176,7 +181,7 @@ font-weight: 500;
   height: 0;
   border-style: solid;
   border-width: 5px 0 5px 5px;
-  margin-left: 40px;
+  margin-left: 30px;
   border-color: transparent transparent transparent #000000;
   position: absolute;
   top: 11px;
@@ -194,7 +199,7 @@ font-weight: 500;
   position: absolute;
   left: 0;
   top: 15px;
-  padding: 0 30px;
+  padding: 0 40px;
   width: 100%;
 
   transition: background 0.6s ease-in;
@@ -311,6 +316,8 @@ font-weight: 500;
 {
     width: 280px;
 }
+
+
 /* Navigation End */
 
 /* Common */
@@ -320,11 +327,48 @@ font-weight: 500;
 }
 .f-pcm
 {
-  padding: 50px 50px 0 100px;
+  padding: 0 40px 0 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
-.about-us-eden, .what-we-do-eden, .our-work-eden, .testimonial-slider-cover
+.arrow-img-thin
 {
- padding: 100px 30px; 
+  width: 25px;
+  transform: rotate(
+90deg);
+}
+.arrow-white-img
+{
+  
+filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(298deg) brightness(102%) contrast(102%);
+
+
+}
+.about-us-eden
+{
+  padding: 100px 40px;
+}
+.testimonial-slider-cover
+{
+  padding: 50px 40px 100px 120px;
+}
+ .what-we-do-eden
+{
+ /* padding: 100px 30px;  */
+ padding: 100px 40px 100px 120px;
+}
+.our-work-patch
+{
+  padding: 20px 0 25px 0 !important;
+}
+.our-work-eden
+{
+  padding: 50px 40px 50px 40px;
+}
+.footer-section
+{
+  padding: 0 40px;
 }
 .p-sm 
 {
@@ -347,13 +391,13 @@ font-weight: 500;
 
 .magnet {
   display: inline-block;
-  padding: 20px;
-  border-radius: 100px;
+  padding: 30px;
+  border-radius: 100%;
   transform-style: preserve-3d;
   backface-visibility: hidden;
   transition: all .5s ease;
   font-size: 1.5rem;
-  margin-left: 60px;
+  margin-left: 100px;
 }
 .magnet-mouse-active {
   background-color: #ff8800;
@@ -603,36 +647,39 @@ font-weight: 500;
 /* About Us Section */
 .pre-head 
 {
-    font-size: 1.5rem;
-    font-weight: 700;
+    font-size: 18px;
+    font-weight: bold;
     position: relative;
+    padding: 0;
 }
 .pre-head::before
 {
   content: "";
   position: absolute;
   height: 2px;
-  width: 25px;
-  top: 11px;
+  width: 40px;
+  top: 13px;
   background-color: orange;
-  left: -30px;
+  left: -80px;
 }
 .main-head-eden
 {
-    font-weight: 800;
-    font-size: 3rem;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  margin: 0;
+  padding: 35px 0 45px 0;
 }
 .content-detail-sm
 {
-    font-size: 1.5rem;
-    line-height: 3rem;
-    color: #666666;
-  
+  font-size: 18px;
+  line-height: 36px;
+  color: #666666;
 }
-.eden-about-us-img
+/* .eden-about-us-img
 {
   width: 250px;
-}
+} */
 .btn-15 {
 
  color: rgb(0, 0, 0);
@@ -735,6 +782,7 @@ font-weight: 600;
   font-size: 2rem;
   z-index: 1;
   text-align: start;
+  word-break: break-all;
  }
  .card-corner>img
  {
@@ -746,8 +794,13 @@ font-weight: 600;
  }
  .card-square
  {
-  height: 200px;
+  height: 223px;
   padding: 3px;
+  transition: 0.2s ease-in-out;
+ }
+ .card-square:hover 
+ {
+   filter: invert(0.2);
  }
 /* What we Do End */
 
@@ -799,7 +852,7 @@ font-weight: 600;
   right: 0;
   width: 361px;
   height: 350px;
-  padding: 4rem;
+  padding: 46px;
   font-size: 9rem;
   color: white;
   text-align: left;
@@ -809,8 +862,8 @@ font-weight: 600;
 	text-overflow: ellipsis;
 	overflow: hidden;
 	transform: translateY(-30%);
-  font-weight: 600;
-  font-size: 3rem;
+  font-weight: bold;
+  font-size: 30px;
 	opacity: 0;
 	transition: transform .5s, opacity .5s;
   will-change: transform, opacity;
@@ -825,12 +878,11 @@ font-weight: 600;
   will-change: transform, opacity;
 }
 .content-slider> p {
-	display: inline-block;
-	font-size: 1.5rem;
-	text-transform: lowercase;
+	display: block;
+	font-size: 14px;
 	opacity: 0;
   color: #c9c9c9;
-  padding-top: 2rem;
+  padding-top: 1rem;
 	transform: translateY(-100%);
 	transition: transform .5s .1s, opacity .5s .1s;
   will-change: transform, opacity;
@@ -923,11 +975,12 @@ li.prev_slide .image-slider-work {
 .counter {
 	display: inline-block;
 	font-size: 2rem;
-	font-family: serif;
+  color: #666666;
 }
 .counter span:first-child
 {
-  font-weight: 600;
+  font-weight: bold;
+  color: #000;
 }
 .counter span:last-child::before {
 	content: '/';
@@ -937,10 +990,17 @@ li.prev_slide .image-slider-work {
 	width: 3.5rem;
 }
 @media screen and ( max-width: 550px ) {
+  .cd-slider
+  {
+    width: 370px;
+  }
   .btn--control
   {
     padding: 20px;
     font-size: 8px;
+    width: 100%;
+    height: initial;
+    border: none;
   }
 	.image-slider-work { width: 100%; }
 	.content-slider { padding-right: 2rem; }
@@ -955,7 +1015,7 @@ li.prev_slide .image-slider-work {
 
 .testimonials-wrapper {
   position: relative;
-  padding: 17px 70px 85px 18%;
+  padding: 17px 70px 85px 25%;
   }
   
   .testimonial-swiper2
@@ -1016,6 +1076,7 @@ li.prev_slide .image-slider-work {
       text-transform: none;
       margin-top: 0;
       margin-bottom: 0;
+      font-weight: bold;
   }
   .testimonials-wrapper .testimonials-item .testimonials-author:before {
       content: '-';
@@ -1056,7 +1117,7 @@ li.prev_slide .image-slider-work {
       position: relative;
       display: inline-block;
       font-family: Roboto,sans-serif;
-      font-size: 14px;
+      font-size: 18px;
       line-height: 30px;
       letter-spacing: 1.5px;
       font-weight: 300;
@@ -1118,17 +1179,17 @@ li.prev_slide .image-slider-work {
 
 /* Footer */
 
-.footer-section
-{
-  margin-top: 100px;
-}
 .card-form {
   padding: 2rem 1rem 0;
+}
+.footer-section
+{
+  margin-top: 50px;
 }
 .footer-form
 {
   padding: 4rem;
-  margin-top: -100px;
+  margin-top: -130px;
   box-shadow:
   0 0.5px 5.3px rgba(0, 0, 0, 0.028),
   0 1.6px 17.9px rgba(0, 0, 0, 0.042),
@@ -1140,7 +1201,7 @@ li.prev_slide .image-slider-work {
   flex-direction: column-reverse;
   position: relative;
   padding-top: 1.5rem;
-  margin-bottom: 3.5rem;
+  margin-bottom: 5.5rem;
 }
 
 .input-label {
@@ -1148,8 +1209,9 @@ li.prev_slide .image-slider-work {
   position: absolute;
   top: 0.5rem;
   transition: 0.25s ease;
-  font-size: 1.3rem;
+  font-size: 18px;
   font-weight: 500;
+  transform: translateY(-2rem);
 }
 
 .input-field {
@@ -1163,7 +1225,7 @@ li.prev_slide .image-slider-work {
 }
 .eden-inf
 {
-  font-size: 1.8rem;
+  font-size: 21px;
   font-weight: 600;
 }
 .input-field:focus, .input-field:valid {
@@ -1172,7 +1234,7 @@ li.prev_slide .image-slider-work {
 }
 .input-field:focus + .input-label, .input-field:valid + .input-label {
   color: #000000;
-  transform: translateY(-1.5rem);
+ 
 }
 
 
@@ -1334,6 +1396,8 @@ overflow: hidden;
 {
   line-height: 2.5rem;
   margin: 0;
+  font-size: 18px;
+  font-weight: 600;
 }
 #burgerBtn
 {
@@ -1367,17 +1431,32 @@ and (orientation : landscape) {
     padding-right: calc(var(--bs-gutter-x) * .5);
     padding-left: calc(var(--bs-gutter-x) * .5);
   }
-
+.break-line-dynamic
+{
+  display: none;
+}
 }
 
 
 @media screen and (max-width: 768px) {
+  .responsive-flex
+  {
+    flex-direction: column;
+  }
+  .our-service-right
+  {
+margin-top: 200px;
+padding-right: var(--bs-gutter-x,.75rem);
+    padding-left: var(--bs-gutter-x,.75rem);
+  }
+
   .testimonial-slider-cover
   {
     margin-top: 100px;
+    padding: initial;
   }
   .pre-head::before {
-    left: -29px;
+    left: -42px;
 }
   .eden-about-us-img {
     padding-bottom: 50px;
@@ -1436,6 +1515,11 @@ and (orientation : landscape) {
   }
   .about-us-eden, .what-we-do-eden, .our-work-eden, .testimonial-eden {
     padding: 50px 0;
+  }
+  .footer-section
+  {
+    padding: initial;
+    margin-top: 100px;
   }
 }
 @media screen and (min-width: 767px) {
