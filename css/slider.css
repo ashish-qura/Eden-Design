@@ -73,7 +73,7 @@
   z-index: 2;
   height: 100%;
   overflow: hidden;
-  padding: 0 30px;
+  padding: 0 40px;
 }
 .slide-bg-text {
   font-family: "Playfair Display";
@@ -95,7 +95,7 @@
   color: #fff;
   margin-top: 5rem;
   position: absolute;
-  width: 45%;
+  width: 48%;
   top: 50%;
   transform: translateY(-50%);
   display: flex;
@@ -109,9 +109,7 @@
   will-change: auto;
 }
 @media (max-width: 1400px) {
-  .slide-content {
-    width: initial;
-  }
+
 }
 @media (max-width: 1150px) {
   .slide-content-text p {
