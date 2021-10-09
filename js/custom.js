@@ -34,7 +34,8 @@ var app = new Vue({
         isFirstLoad: true,
         slides: [
             {
-                headlineFirstLine: "EDEN-  Our Story",
+                headlineFirstLine: "EDEN-",
+				headlineSecondLine: "Our Story",
 				buttonName: "EDEN- OUR STORY",
                 // headlineSecondLine: "1",
                 bgImg: "https://i.postimg.cc/mrkth756/Layer-1.jpg",

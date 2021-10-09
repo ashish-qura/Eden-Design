@@ -370,7 +370,7 @@ padding-left: 60px;
   display: inline-block;
  
   line-height: 1em;
-  font-size: 1.2rem;
+  font-size: 12px;
 
   padding: 16px 0;
   position: relative;
@@ -1643,7 +1643,7 @@ and (orientation : landscape) {
   .card-cs>p {
     font-size: 16px;
   }
-
+ 
 }
 
 @media screen and (max-width: 768px) {
@@ -1759,14 +1759,57 @@ padding-right: var(--bs-gutter-x,.75rem);
 }
 @media screen and (max-width: 550px) 
 {
+  .about-us-eden, .what-we-do-eden, .our-work-eden, .testimonial-slider-cover {
+    padding: 25px;
+  }
+  .pre-head::before
+  {
+    top: 10px;
+  }
   .eden-inf
   {
     font-size: 15px;
   }
   .counter span:first-child
-{
-  color: rgb(255, 255, 255);
+  {
+    color: rgb(255, 255, 255);
+  }
+  .link-text
+  {
+    font-size: 16px;
+  }
+  .magnet
+  {
+    margin-left: 0;
+  }
+  .content-detail-sm
+  {
+    font-size: 16px;
+    text-align: justify;
+  }
+  .pre-head
+  {
+    font-size: 17px;
+    line-height: normal;
+  }
+
+  .main-head-eden {
+    padding: 15px 0;
+  }
+  .footer-form
+  {
+    padding: 15px;
+  }
 }
+@media screen and (max-width: 350px)  {
+  .content-slider
+  {
+    width: 340px;
+  }
+  .testimonials-wrapper .testimonials-item
+  {
+    padding: 0 5px;
+  }
 }
 
 @media screen and (min-width: 767px) {

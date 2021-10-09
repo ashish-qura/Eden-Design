@@ -15,7 +15,7 @@
 
 
 .wrapper {
-  height: 80vh;
+  height: 100vh;
   min-height: 36rem;
   position: relative;
 }
@@ -95,7 +95,6 @@
   color: #fff;
   margin-top: 5rem;
   position: absolute;
-  width: 48%;
   top: 50%;
   transform: translateY(-50%);
   display: flex;
@@ -104,10 +103,12 @@
 .slide-content-text p {
   font-size: 120px;
   letter-spacing: 0.2rem;
-  line-height: 120px;
+  line-height: normal;
   font-weight: bold;
   will-change: auto;
+  margin-bottom: 0;
 }
+
 @media (max-width: 1400px) {
 
 }
@@ -129,15 +130,10 @@
  
 }
 
-@media (max-width: 500px) {
-  .slide-content-text p {
-    font-size: 5.5rem;
-    line-height: 50px;
-  }
-}
-.slide-content-text > p:last-child {
+
+/* .slide-content-text > p:last-child {
   padding-left: 3rem;
-}
+} */
 .slide-content-cta {
   cursor: pointer;
   align-self: flex-start;
@@ -252,9 +248,21 @@
     width: 70%;
   }
 }
-
-@media (max-width: 630px) {
- 
+@media (max-width: 500px) {
+  .slide-inner
+  {
+    padding: 0 17px;
+  }
+  .slide-content-text p {
+    font-size: 5.5rem;
+    line-height: 50px;
+  }
+  .slide-content {
+    width: 100%;
+}
+  .wrapper {
+    height: 90vh;
+}
 }
 .controls-button {
     cursor: pointer;
@@ -291,19 +299,16 @@
 }
 
 .pagination-container {
+
   position: absolute;
   z-index: 200;
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: flex-end;
   right: 2rem;
  bottom: 30px;
 }
-@media (max-width: 920px) {
-  .pagination-container {
- 
-  }
-}
+
 .pagination-item {
   width: 50px;
   height: 6px;
@@ -338,7 +343,12 @@
   background-color: #fff;
   width: 35px;
 }
-
+@media (max-width: 730px)
+{
+  .pagination-container {
+    display: flex;
+  }
+}
 @-webkit-keyframes slideLeft {
   from {
     transform: translateX(0);
