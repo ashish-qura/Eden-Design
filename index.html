@@ -16,6 +16,9 @@
     <!-- External Links End -->
     <title>Eden</title>
 </head>
+<style>
+ 
+</style>
 <body>
     <div id="mobileView" class="demo11">
         <div id="burgerBtn"></div>
@@ -37,7 +40,7 @@
                     </button>
        -->
                     
-                    <div id="main-nav" class=" justify-content-center">
+                    <!-- <div id="main-nav" class=" justify-content-center">
                         <ul class="navbar-nav ml-auto">
                             <li><a href="#" class="nav-item nav-link active">
 ABOUT
@@ -48,7 +51,44 @@ ABOUT
                             <li><a href="#contact-us" class="nav-item nav-link">CONTACT</a></li>
     
                         </ul>
-                    </div>
+                    </div> -->
+                    <aside class="menu">
+                      <ul>
+                        <li>
+                          <a class="nav-link active" data-cursor="1" href="/about/" title="About" target="">
+                              <div class="text">
+                                  <div class="text_line">About</div>
+                                  <div class="text_line">About</div>
+                              </div>
+                          </a>
+                      </li>
+                                                  <li>
+                                  <a class="" data-cursor="1" href="/services/" title="Services" target="">
+                                      <div class="text">
+                                          <div class="text_line">Services</div>
+                                          <div class="text_line">Services</div>
+                                      </div>
+                                  </a>
+                              </li>
+                                                
+                                                  <li>
+                                  <a class="" data-cursor="1" href="/insights/" title="Insights" target="">
+                                      <div class="text">
+                                          <div class="text_line">projects</div>
+                                          <div class="text_line">projects</div>
+                                      </div>
+                                  </a>
+                              </li>
+                                                  <li>
+                                  <a class="" data-cursor="1" href="/contact/?p=message" title="Contact" target="">
+                                      <div class="text">
+                                          <div class="text_line">Contact</div>
+                                          <div class="text_line">Contact</div>
+                                      </div>
+                                  </a>
+                              </li>
+                                          </ul>
+                  </aside>
                     <button class="custom-btn btn-13">RESEARCH PROJECTS</button>
                 </div>
             </nav>
@@ -87,19 +127,21 @@ ABOUT
             <div class="controls-container">
               <button class="controls-button custom-btn btn--control " v-for="(slide, index) in slides" v-bind:class="{ active: index === currentSlide }" v-on:click="updateSlide(index)">{{ slide.buttonName }}</button>
             </div>
-            <!-- <div class="pagination-container">
+            <div class="pagination-container">
               <span class="pagination-item" v-for="(slide, index) in slides" v-bind:class="{ active: index === currentSlide }" v-on:click="updateSlide(index)"></span>
-            </div> -->
+            </div>
           </div>
     </div>
    
 <!-- About Us Section -->
 <section class="about-us-eden">
-    <div class="row align-items-center container-fluid mx-auto">
-        <div class="col-lg-6 col-md-6 col-sm-12 text-center">
+    <div class="align-items-center eden-container">
+      <div class="row">
+        <div class="col-lg-6 col-md-12 col-sm-12 text-center">
             <img src="./images/eden-aboutus.png" alt="Eden-About-Us" class="eden-about-us-img">
         </div>
-        <div class="col-lg-6 col-md-6 col-sm-12 left-move-globl">
+        <div class="col-lg-6 col-md-12 col-sm-12 left-move-globl">
+          <div class="wrapper-container">
             <p class="pre-head">
                 WE ARE EDEN - DESIGN CONSULTANT
             </p>
@@ -119,17 +161,19 @@ ABOUT
                         <span class="magnet"><img src="./images/thin-arrow.svg" class="arrow-img-thin"></span>
                       </a>
                 </div>
-              
+              </div>
         </div>
     </div>
+  </div>
 </section>
 
 
 <!-- What we Do Section -->
 <section class="what-we-do-eden bg-black">
-    <div class="row container-fluid mx-auto">
-        
-        <div class="col-lg-6 col-md-6 col-sm-12 pr-cs">
+    <div class="container-fluid eden-container">
+        <div class="row">
+         
+        <div class="col-lg-6 col-md-12 col-sm-12 left-space">
           <div class="b-box">
             <p class="pre-head text-white">
                 WHAT WE DO
@@ -150,8 +194,9 @@ ABOUT
                 </div>
                 </div>
               </div>
-        <div class="col-lg-6 col-md-6 col-sm-12 text-center">
-            <div class="row">
+        <div class="col-lg-6 col-md-12 col-sm-12 text-center">
+         
+            <div class="row justify-content-end">
                 <div class="col-lg-6 col-md-6 col-sm-12 card-square">
                     <div class="card bg-dark h-100">
                         <div class="card-title card-cs">
@@ -202,14 +247,15 @@ ABOUT
                     </div>
                 </div>
             </div>
-            
+        
         </div>
     </div>
+  </div>
 </section>
 
 <!-- Our Work Section -->
 <section class="our-work-eden">
-<div class="container-fluid col-12">
+<div class="container-fluid eden-container col-12">
 <div class="d-flex align-items-center responsive-flex">
     <div class="col-lg-8 col-md-8 col-sm-12">
     <div class="tab-content" id="v-pills-tabContent">
@@ -217,7 +263,7 @@ ABOUT
           <div class="cd-slider">
         <ul>
           <li>
-            <div class="image-slider-work" style="background-image:url(https://images.unsplash.com/photo-1421809313281-48f03fa45e9f?crop=entropy&fit=crop&fm=jpg&h=675&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1000);"></div>
+            <div class="image-slider-work" style="background-image:url(./images/ow-0.png);"></div>
             <div class="content-slider">
                 <h1>Runwal Bliss</h1>
                 <h4>Bopal, Ahmedabad</h4>
@@ -229,7 +275,7 @@ ABOUT
             </div>
           </li>
           <li>
-            <div class="image-slider-work" style="background-image:url(https://images.unsplash.com/uploads/1411724908903377d4696/2e9b0cb2?crop=entropy&fit=crop&fm=jpg&h=675&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1000);"></div>
+            <div class="image-slider-work" style="background-image:url(./images/ow-1.jpg);"></div>
             <div class="content-slider">
                 <h1>Runwal Bliss</h1>
                 <h4>Bopal, Ahmedabad</h4>
@@ -246,7 +292,7 @@ ABOUT
       <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">   <div class="cd-slider">
         <ul>
           <li>
-            <div class="image-slider-work" style="background-image:url(https://images.unsplash.com/photo-1421809313281-48f03fa45e9f?crop=entropy&fit=crop&fm=jpg&h=675&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1000);"></div>
+            <div class="image-slider-work" style="background-image:url(./images/ow-2.jpg);"></div>
             <div class="content-slider">
                 <h1>Runwal Bliss</h1>
                 <h4>Bopal, Ahmedabad</h4>
@@ -257,7 +303,18 @@ ABOUT
             </div>
           </li>
           <li>
-            <div class="image-slider-work" style="background-image:url(https://images.unsplash.com/uploads/1411724908903377d4696/2e9b0cb2?crop=entropy&fit=crop&fm=jpg&h=675&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1000);"></div>
+            <div class="image-slider-work" style="background-image:url(./images/ow-3.jpg);"></div>
+            <div class="content-slider">
+                <h1>Runwal Bliss</h1>
+                <h4>Bopal, Ahmedabad</h4>
+              
+                <p>Architect: <br>Architect Hafeez contractor</p>
+                <p>Developer: <br>Runwal Real Estates Private Limited</p>
+                <p>Work Scope: <br>Lorem Ipsum</p>
+            </div>
+          </li>
+          <li>
+            <div class="image-slider-work" style="background-image:url(./images/ow-6.jpg);"></div>
             <div class="content-slider">
                 <h1>Runwal Bliss</h1>
                 <h4>Bopal, Ahmedabad</h4>
@@ -273,7 +330,7 @@ ABOUT
       <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">   <div class="cd-slider">
         <ul>
           <li>
-            <div class="image-slider-work" style="background-image:url(https://images.unsplash.com/photo-1421809313281-48f03fa45e9f?crop=entropy&fit=crop&fm=jpg&h=675&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1000);"></div>
+            <div class="image-slider-work" style="background-image:url(./images/ow-4.jpg);"></div>
             <div class="content-slider">
                 <h1>Runwal Bliss</h1>
                 <h4>Bopal, Ahmedabad</h4>
@@ -284,7 +341,7 @@ ABOUT
             </div>
           </li>
           <li>
-            <div class="image-slider-work" style="background-image:url(https://images.unsplash.com/uploads/1411724908903377d4696/2e9b0cb2?crop=entropy&fit=crop&fm=jpg&h=675&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1000);"></div>
+            <div class="image-slider-work" style="background-image:url(./images/ow-5.jpg);"></div>
             <div class="content-slider">
                 <h1>Runwal Bliss</h1>
                 <h4>Bopal, Ahmedabad</h4>
@@ -325,7 +382,7 @@ ABOUT
             <div class="cd-slider">
                 <ul>
                   <li>
-                    <div class="image-slider-work" style="background-image:url(https://images.unsplash.com/photo-1421809313281-48f03fa45e9f?crop=entropy&fit=crop&fm=jpg&h=675&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1000);"></div>
+                    <div class="image-slider-work" style="background-image:url(./images/ow-2.jpg);"></div>
                     <div class="content-slider">
                         <h1>Runwal Bliss</h1>
                         <h4>Bopal, Ahmedabad</h4>
@@ -338,7 +395,7 @@ ABOUT
                     </div>
                   </li>
                   <li>
-                    <div class="image-slider-work" style="background-image:url(https://images.unsplash.com/uploads/1411724908903377d4696/2e9b0cb2?crop=entropy&fit=crop&fm=jpg&h=675&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1000);"></div>
+                    <div class="image-slider-work" style="background-image:url(./images/ow-2.jpg);"></div>
                     <div class="content-slider">
                         <h1>Runwal Bliss</h1>
                         <h4>Bopal, Ahmedabad</h4>
@@ -365,8 +422,9 @@ ABOUT
 <!-- Testimonial -->
 
 <!-- Slider main container -->
-<section class="testimonial-slider-cover">
-<div class="row mx-auto container-fluid">
+<section class="testimonial-slider-cover left-patch-p">
+<div class="container eden-container">
+  <div class="row">
 <p class="pre-head">TESTIMONIALS</p>
 
     <h2 class="main-head-eden our-work-patch">Trusted and loved <br> by the experts</h2>
@@ -389,6 +447,7 @@ ABOUT
     <!-- If we need pagination -->
     <div class="testimonials-pagination-wrapper">
     <div class="swiper-pagination"></div></div>
+</div>
 </div>
 </div>
 </div>
@@ -469,7 +528,7 @@ ABOUT
                <p> <a href="mailto:projects@edenconsultants.in" class="content-detail-sm text-white footer-address">  projects@edenconsultants.in</a></p>
 </div>
 <div class="col-12 text-center pt-5 pb-4">
-    <p class="content-detail-sm">All rights reserved. © 2018-2021 EDEN Design Consultants.</p>
+    <p class="footer-credit">All rights reserved. © 2018-2021 EDEN Design Consultants.</p>
 </div>
 </div>
 </div>
