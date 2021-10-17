@@ -385,8 +385,13 @@ padding-left: 60px;
   width: 100%;
   height: 11px;
 }
+.menu a:hover
+{
+ color: #faad00 !important;
+ font-weight: 500;
+}
 .menu a:after {
-  background: #fff;
+  background: #faad00;
   content: "";
   
   bottom: 0;
@@ -398,6 +403,7 @@ padding-left: 60px;
   transform: scaleX(0);
   transform-origin: right;
 }
+
 .menu a .text_line {
   display: block;
   position: relative;
@@ -416,10 +422,12 @@ padding-left: 60px;
   transform: skew(
 15deg,
 15deg) translateY(-20px);
+
 }
 .menu a.current .text_line:last-of-type,  .menu a:hover .text_line:last-of-type {
   opacity: 1;
   transform: skew(0,0) translateY(-12px);
+
 }
 .navbar.fixed-top.navbar-dark .menu .nav-link.active {
   color: #faad00 !important;
@@ -448,7 +456,7 @@ padding-left: 60px;
 }
 .left-space 
 {
-  padding-left: 70px;
+  padding-left: 61px;
 }
 .wrapper-container
 {
@@ -478,7 +486,7 @@ filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(298deg) brightness(102%
 }
 .testimonial-slider-cover
 {
-  padding: 50px 40px 50px 111px;
+  padding: 100px 40px 100px 111px;
 }
  .what-we-do-eden
 {
@@ -491,7 +499,7 @@ filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(298deg) brightness(102%
 }
 .our-work-eden
 {
-  padding: 50px 40px;
+  padding: 100px 50px 40px;
 }
 .footer-section
 {
@@ -933,7 +941,9 @@ font-weight: 600;
  .card-square
  {
   height: 223px;
-  padding: 3px;
+  padding-left: 6px;
+  padding-bottom: 6px;
+  padding-right: 0;
   transition: 0.2s ease-in-out;
  }
  .card-square:hover 
@@ -1153,7 +1163,7 @@ li.prev_slide .image-slider-work {
 
 .testimonials-wrapper {
   position: relative;
-  padding: 17px 0 85px 25%;
+  padding: 17px 0 0 25%;
   }
   
   .testimonial-swiper2
@@ -1183,7 +1193,7 @@ li.prev_slide .image-slider-work {
   .testimonials-pagination-wrapper {
       position: absolute;
       top: 0;
-      height: calc(100% - 80px);
+      height: calc(100%);
       left: 1%;
       width: 20% !important;
   }
@@ -1322,7 +1332,7 @@ li.prev_slide .image-slider-work {
 }
 .footer-section
 {
-  margin-top: 50px;
+  margin-top: 125px;
 }
 .footer-form
 {
@@ -1552,7 +1562,11 @@ and (orientation : landscape) {
 
   .navbar-logo 
   {
-    width: 200px;
+    width: 120px;
+  }
+  .btn-13
+  {
+    font-size: 10px;
   }
   .card-cs>p
   {
@@ -1647,6 +1661,18 @@ and (orientation : landscape) {
 }
 
 @media screen and (max-width: 768px) {
+  .slide-content-text p
+  {
+    line-height: normal;
+  }
+  .testimonials-wrapper
+  {
+    padding-bottom: 85px;
+  }
+  .res-margin
+  {
+    margin-bottom: 60px;
+  }
   .btn--control
   {
   width: initial;
