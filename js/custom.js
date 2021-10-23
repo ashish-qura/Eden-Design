@@ -1,4 +1,7 @@
 
+// Footer Credit Current Year
+document.getElementById("currentYear").innerHTML = new Date().getFullYear();
+
 
 // Testimonial Slider
 
@@ -296,3 +299,4 @@ demo1.addEventListener('click', function() {
 }, false);
 
 // Navbar For Mobile End
+
