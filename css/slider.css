@@ -267,7 +267,7 @@
     cursor: pointer;
     background: transparent;
     border: 1px solid;
-    padding: 2.8rem 5.5rem;
+    /* padding: 2.8rem 5.5rem; */
     font-size: 1.3rem;
     transition: 0.25s ease-in-out;
     outline: 0;

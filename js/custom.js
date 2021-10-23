@@ -45,14 +45,15 @@ var app = new Vue({
                 
             },
             {
-                headlineFirstLine: "About Eden",
-                // headlineSecondLine: "s",
+                headlineFirstLine: "About",
+                headlineSecondLine: "Eden",
 				buttonName: "EDEN- OUR STORY",
                 bgImg: "https://i.postimg.cc/wjGj7WdX/sean-pollock-Ph-Yq704ffd-A-unsplash.jpg",
           
             },
             {
-                headlineFirstLine: "Building Design",
+                headlineFirstLine: "Building",
+				headlineSecondLine: "Design",
 				buttonName: "EDEN- OUR STORY",
                 // headlineSecondLine: "Ultricies",
                 bgImg: "https://i.postimg.cc/xCZnMqKs/zq-lee-Dcy-L0-Io-CY0-A-unsplash.jpg",
