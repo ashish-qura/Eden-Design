@@ -471,6 +471,10 @@ filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(298deg) brightness(102%
 {
   padding: 100px 40px;
 }
+.filter-tab-section
+{
+  padding: 0 40px;
+}
 .testimonial-slider-cover
 {
   padding: 100px 40px 100px 100px;

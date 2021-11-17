@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="css/swiperjs.css"/>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/filter-tab.css">
+
     <!-- External Links End -->
     <title>Eden</title>
 </head>
@@ -106,319 +108,96 @@ ABOUT
     <!-- Main-SLider -->
     
     <div class="banner">
-        <div id="app" class="wrapper" v-cloak v-bind:class="{'is-previous': isPreviousSlide, 'first-load': isFirstLoad}">
-            <div class="slide-wrapper" v-for="(slide, index) in slides" v-bind:class="{ active: index === currentSlide }" v-bind:style="{ 'z-index': (slides.length - index), 'background-image': 'url(' + slide.bgImg + ')' }">
-              <div class="slide-inner container-fluid">
-                <div class="slide-bg-text">
-                  <p>{{ slide.headlineFirstLine }}</p>
-                  <p>{{ slide.headlineSecondLine }}</p>
-                </div>
-                <div class="slide-rect-filter">
-             
-                </div>
-                <div class="slide-content">
-                  <h1 class="slide-content-text">
-                    <p>{{ slide.headlineFirstLine }}</p>
-                    <p>{{ slide.headlineSecondLine }}</p>
-                  </h1>
-                </div>
-               </div>
-            </div>
-            <div class="controls-container">
-              <button class="controls-button custom-btn btn--control " v-for="(slide, index) in slides" v-bind:class="{ active: index === currentSlide }" v-on:click="updateSlide(index)">{{ slide.buttonName }}</button>
-            </div>
-            <div class="pagination-container">
-              <span class="pagination-item" v-for="(slide, index) in slides" v-bind:class="{ active: index === currentSlide }" v-on:click="updateSlide(index)"></span>
+        <div id="app">
+          <div class="banner-section">
+            <div class="image-text-overlay text-middle-left text-white" style="background-image: url(https://i.postimg.cc/mrkth756/Layer-1.jpg);">
+              <h1 class="slide-content-text"><p>Collective</p> <p>Work</p></h1>
+              <div class="overlay-black"></div>
             </div>
           </div>
-    </div>
-   
-<!-- About Us Section -->
-<section class="about-us-eden">
-    <div class="align-items-center eden-container">
-      <div class="row">
-        <div class="col-lg-6 col-md-12 col-sm-12 text-center">
-            <img src="./images/eden-aboutus.png" alt="Eden-About-Us" class="eden-about-us-img">
-        </div>
-        <div class="col-lg-6 col-md-12 col-sm-12 left-move-globl">
-          <div class="wrapper-container">
-            <p class="pre-head">
-                WE ARE EDEN - DESIGN CONSULTANT
-            </p>
             
-                <h2 class="main-head-eden">
-                    Build innovative and creative workplaces that deliver value to our clients
-                </h2>
            
-            
-                <p class="content-detail-sm mb-4"><strong> Eden - Design Consultants</strong> is established in 2018 having cumulative experience of more than 100 years in providing Design Consultancy services to Projects in Industrial & Infrastructure sectors pan India and abroad. The firm gets its name from the initials of Founding – Mr. Sheel Shah.</p>
-               
-               
-                <div class="content_button border-black">
-                    <a href="#" class="btn-eden-target border-dark">
-                        <span class="link-text">ABOUT US</span>
-                        <!-- <i class="magnet fas fa-long-arrow-alt-right"></i> -->
-                        <span class="magnet"><img src="./images/thin-arrow.svg" class="arrow-img-thin"></span>
-                      </a>
-                </div>
-              </div>
-        </div>
+          </div>
     </div>
-  </div>
-</section>
 
-
-<!-- What we Do Section -->
-<section class="what-we-do-eden bg-black">
-    <div class="container-fluid eden-container">
-        <div class="row">
-         
-        <div class="col-lg-6 col-md-12 col-sm-12 left-space">
-          <div class="b-box">
-            <p class="pre-head text-white">
-                WHAT WE DO
-            </p>
-            
-                <h2 class="main-head-eden text-white">
-                Provide the best <span class="break-line-dynamic"> </br> </span> service   
-                </h2>
+    <section class="what-we-do-eden">
+      <div class="container-fluid eden-container">
+          <div class="row">
            
-            
-                <p class="content-detail-sm mb-4 ">We offer services that cover all aspects of the design and build process, engage the client at every step to ensure the best experience possible.</p>
-                <div class="content_button border-white res-margin">
-                    <a href="#" class="btn-eden-target">
-                        <span class="link-text text-white">EXPLORE SERVICES</span>
-                        <!-- <i class="magnet fas fa-long-arrow-alt-right text-white"></i> -->
-                        <span class="magnet"><img src="./images/thin-arrow.svg" class="arrow-img-thin arrow-white-img"></span>
-                      </a>
-                </div>
-                </div>
-              </div>
-        <div class="col-lg-6 col-md-12 col-sm-12 text-center">
-         
-            <div class="row justify-content-end">
-                <div class="col-lg-6 col-md-6 col-sm-12 card-square">
-                    <div class="card bg-dark h-100">
-                        <div class="card-title card-cs">
-                            <p>
-                                Structure <br> Design
-                        </p>
-                        </div>
-                        <div class="card-corner">
-                            <img src="./images/Project-Management.png" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 card-square">
-                    <div class="card bg-dark h-100">
-                        <div class="card-title card-cs">
-                            <p>
-                            Project Management <br> Consultancy
-                        </p>
-                        </div>
-                        <div class="card-corner">
-                            <img src="./images/Project-Management1.png" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 card-square">
-                    <div class="card bg-dark h-100">
-                        <div class="card-title card-cs">
-                            <p>
-                            Industrial <br> Architecture
-                        </p>
-                        </p>
-                        </div>
-                        <div class="card-corner">
-                            <img src="./images/Industrial.png" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 card-square">
-                    <div class="card bg-dark h-100">
-                        <div class="card-title card-cs">
-                            <p>
-                            Quantity <br> Surveying
-                            </p>
-                        </div>
-                        <div class="card-corner">
-                            <img src="./images/Quantity-s.png" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        
-        </div>
-    </div>
-  </div>
-</section>
-
-<!-- Our Work Section -->
-<section class="our-work-eden">
-<div class="container-fluid eden-container col-12">
-<div class="d-flex align-items-center responsive-flex">
-    <div class="col-lg-8 col-md-8 col-sm-12">
-    <div class="tab-content" id="v-pills-tabContent">
-      <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
-          <div class="cd-slider">
-        <ul>
-          <li>
-            <div class="image-slider-work" style="background-image:url(./images/ow-0.png);"></div>
-            <div class="content-slider">
-                <h1>Runwal Bliss</h1>
-                <h4>Bopal, Ahmedabad</h4>
+          <div class="col-12 col-lg-10 col-md-12 col-sm-12 left-space">
+              <p class="pre-head">
+                  Lorem ipsum
+              </p>
               
-                  <p>Architect: <br>Architect Hafeez contractor</p>
-                  <p>Developer: <br>Runwal Real Estates Private Limited</p>
-                  <p>Work Scope: <br>Lorem Ipsum</p>
-
-            </div>
-          </li>
-          <li>
-            <div class="image-slider-work" style="background-image:url(./images/ow-1.jpg);"></div>
-            <div class="content-slider">
-                <h1>Runwal Bliss</h1>
-                <h4>Bopal, Ahmedabad</h4>
-            
-                  <p>Architect: <br>Architect Hafeez contractor</p>
-                  <p>Developer: <br>Runwal Real Estates Private Limited</p>
-                  <p>Work Scope: <br>Lorem Ipsum</p>
-            </div>
-          </li>
-       
-        </ul>
+                  <h2 class="main-head-eden">
+                    Build innovative and creative workplaces that deliver value
+                    to our clients  
+                  </h2>
+             
+              
+                  <p class="content-detail-sm mb-4 "><b> Eden - Design Consultants</b> is established in 2018 having cumulative experience of more than 100 years in providing Design Consultancy services to Projects in Industrial & Infrastructure sectors pan India and abroad. The firm gets its name from the initials of Founding – Mr. Sheel Shah.</p>
+               
+                  </div>
+                </div>
       </div>
-     </div>
-      <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">   <div class="cd-slider">
-        <ul>
-          <li>
-            <div class="image-slider-work" style="background-image:url(./images/ow-2.jpg);"></div>
-            <div class="content-slider">
-                <h1>Runwal Bliss</h1>
-                <h4>Bopal, Ahmedabad</h4>
-               
-                <p>Architect: <br>Architect Hafeez contractor</p>
-                <p>Developer: <br>Runwal Real Estates Private Limited</p>
-                <p>Work Scope: <br>Lorem Ipsum</p>
-            </div>
-          </li>
-          <li>
-            <div class="image-slider-work" style="background-image:url(./images/ow-3.jpg);"></div>
-            <div class="content-slider">
-                <h1>Runwal Bliss</h1>
-                <h4>Bopal, Ahmedabad</h4>
-              
-                <p>Architect: <br>Architect Hafeez contractor</p>
-                <p>Developer: <br>Runwal Real Estates Private Limited</p>
-                <p>Work Scope: <br>Lorem Ipsum</p>
-            </div>
-          </li>
-          <li>
-            <div class="image-slider-work" style="background-image:url(./images/ow-6.jpg);"></div>
-            <div class="content-slider">
-                <h1>Runwal Bliss</h1>
-                <h4>Bopal, Ahmedabad</h4>
-              
-                <p>Architect: <br>Architect Hafeez contractor</p>
-                <p>Developer: <br>Runwal Real Estates Private Limited</p>
-                <p>Work Scope: <br>Lorem Ipsum</p>
-            </div>
-          </li>
-       
-        </ul>
-      </div></div>
-      <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">   <div class="cd-slider">
-        <ul>
-          <li>
-            <div class="image-slider-work" style="background-image:url(./images/ow-4.jpg);"></div>
-            <div class="content-slider">
-                <h1>Runwal Bliss</h1>
-                <h4>Bopal, Ahmedabad</h4>
-               
-                <p>Architect: <br>Architect Hafeez contractor</p>
-                <p>Developer: <br>Runwal Real Estates Private Limited</p>
-                <p>Work Scope: <br>Lorem Ipsum</p>
-            </div>
-          </li>
-          <li>
-            <div class="image-slider-work" style="background-image:url(./images/ow-5.jpg);"></div>
-            <div class="content-slider">
-                <h1>Runwal Bliss</h1>
-                <h4>Bopal, Ahmedabad</h4>
-                
-                <p>Architect: <br>Architect Hafeez contractor</p>
-                <p>Developer: <br>Runwal Real Estates Private Limited</p>
-                <p>Work Scope: <br>Lorem Ipsum</p>
-            </div>
-          </li>
-       
-        </ul>
-      </div></div>
+  </section>
 
-    </div>
-</div>
-<div class="col-lg-4 col-md-4 col-sm-12 our-service-right">
-    <p class="pre-head">
-      OUR WORKS
-    </p>
-    
-        <h2 class="main-head-eden our-work-patch">
-            Lorem ipsum dummy text
-        </h2>
-    <div class="nav flex-column nav-pills me-3 nav-wrapper-block" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-        <a class="arrow-swing cs-nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true"> Residential Project</a>
-        <a class="arrow-swing cs-nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Commercial Project</a>
-        <a class="arrow-swing cs-nav-link" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false"> Hotel Project</a>
-       </div>
-    </div>
+    <!-- Filter Tab -->
+
+  <div class="container-fluid eden-container">
+      <div class="row">
+      <div class="col-12 col-lg-10 col-md-12 col-sm-12 left-space">
+        <div id="filters" class="toolbar mb2 mt2">
+          <button class="btn fil-cat filter active" href=""  data-filter="all">All</button>
+          <button class="btn fil-cat filter" data-rel="web" data-filter=".web">Websites</button>
+          <button class="btn fil-cat filter" data-rel="flyers" data-filter=".flyers">Flyers</button> 
+          <button class="btn fil-cat filter" data-rel="bcards" data-filter=".bcards">Business Cards</button>
+        </div> 
+              </div>
+            </div>
   </div>
+<div style="clear:both;"></div>     
+<div id="filterTab"> 
+  <div class="tile scale-anm web" >
+    <img src="https://picsum.photos/300/234" alt="" />
+  </div>
+  <div class="tile scale-anm web ">
+    <img src="https://picsum.photos/300/201/?random" alt="" />
+  </div>
+  <div class="tile scale-anm web" >
+    <img src="https://picsum.photos/300/270" alt="" />
+  </div>
+  <div class="tile scale-anm flyers">
+    <img src="https://picsum.photos/300/172/?random" alt="" />
+  </div>
+  <div class="tile scale-anm flyers">
+    <img src="https://picsum.photos/300" alt="" />
+  </div>
+  <div class="tile scale-anm bcards" >
+    <img src="https://picsum.photos/300/300/?random" alt="" />
+  </div>
+  <div class="tile scale-anm bcards" >
+    <img src="https://picsum.photos/300/201" alt="" />  
+  </div>
+    <div class="tile scale-anm bcards" >
+    <img src="https://picsum.photos/300/172" alt="" />
+  </div>
+  <div class="tile scale-anm web ">
+    <img src="https://picsum.photos/300/201/?random" alt="" />
+  </div>
+    <div class="tile scale-anm bcards" >
+    <img src="https://picsum.photos/300/172/?random" alt="" />
+  </div>
+  <div class="tile scale-anm web" >
+    <img src="https://picsum.photos/300/270/?random" alt="" />
+  </div>
+  <div class="tile scale-anm web" >
+    <img src="https://picsum.photos/300/?random" alt="" />
+  </div>  
 </div>
-</section>
-<!-- <section class="our-work-eden">
-   
-    <div class="row align-items-center container-fluid mx-auto">
-        
-        <div class="col-lg-8 col-md-8 col-sm-12">
-            <div class="cd-slider">
-                <ul>
-                  <li>
-                    <div class="image-slider-work" style="background-image:url(./images/ow-2.jpg);"></div>
-                    <div class="content-slider">
-                        <h1>Runwal Bliss</h1>
-                        <h4>Bopal, Ahmedabad</h4>
-                        <p>Architect: <br>
-                          Architect Hafeez contractor <br>
-                          Developer:   <br>
-                          Runwal Real Estates Private Limited <br>
-                          Work Scope: <br>
-                          Lorem Ipsum</p>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="image-slider-work" style="background-image:url(./images/ow-2.jpg);"></div>
-                    <div class="content-slider">
-                        <h1>Runwal Bliss</h1>
-                        <h4>Bopal, Ahmedabad</h4>
-                        <p>Architect: <br>
-                          Architect Hafeez contractor <br>
-                          Developer:   <br>
-                          Runwal Real Estates Private Limited <br>
-                          Work Scope: <br>
-                          Lorem Ipsum</p>
-                    </div>
-                  </li>
-               
-                </ul>
-              </div> 
-              
-           </div>
-        <div class="col-lg-4 col-md-4 col-sm-12 text-center">
-            
-            
-        </div>
-    </div>
-</section> -->
 
+<div style="clear:both;"></div>
+    <!-- Filter Tab End -->
 <!-- Testimonial -->
 
 <!-- Slider main container -->
@@ -591,11 +370,26 @@ ABOUT
     <script src="js/typewriter.js"></script>
     <!-- Swiperjs end -->
     <script src="js/vue.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/2.1.11/jquery.mixitup.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/fluffy-factory/magnet-mouse@latest/lib/magnet-mouse.min.js"></script>
 
     <script src="js/custom.js"></script>
-    
-    <!-- script End -->
+    <script>
+      jQuery('#filterTab').mixItUp({  
+
+      selectors: {
+        target: '.tile',
+        filter: '.filter',
+        sort: '.sort-btn'
+      },
+
+          animation: {
+          animateResizeContainer: false,
+          effects: 'fade scale'
+        }
+
+      });
+    </script>
     <script>
         new TypeWriter('#email-typewirte', ['johnduo@email.com']);
         new TypeWriter('#name-typewirte', ['John Duo']);
