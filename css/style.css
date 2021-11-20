@@ -1790,6 +1790,10 @@ padding-right: var(--bs-gutter-x,.75rem);
     margin-top: 100px;
   }
 
+  .switch-tabs
+  {
+    margin-top: 0 !important;
+  }
 }
 @media screen and (max-width: 550px) 
 {
