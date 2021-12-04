@@ -300,3 +300,19 @@ font-weight: bold;
     transform: scale(1.2);
   }
   
+  @media (max-width: 500px)  {
+    .scale-anm .label-text h4
+    {
+      font-size: 10px;
+      line-height: initial;
+    }
+    .scale-anm:before {
+      width: 30px;
+      height: 30px;
+      margin-top: 10px;
+ 
+  }
+  .scale-anm .label-text {
+    padding: 13px 10px;
+  }
+  }

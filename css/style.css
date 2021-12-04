@@ -1131,6 +1131,7 @@ li.prev_slide .image-slider-work {
 	width: 3.5rem;
 }
 @media screen and ( max-width: 550px ) {
+  
   .cd-slider
   {
     width: 370px;
@@ -1888,10 +1889,7 @@ padding-right: var(--bs-gutter-x,.75rem);
 }
 
 @media screen and (min-width:0px) {
-  .wrapper-container
-  {
-   
-  }
+
   
 }
 @-webkit-keyframes navbar-animation {
