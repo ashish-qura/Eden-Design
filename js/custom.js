@@ -300,4 +300,3 @@ demo1.addEventListener('click', function() {
 }, false);
 
 // Navbar For Mobile End
-

@@ -14,9 +14,15 @@
     <!-- <link rel="stylesheet" href="css/swiperjs.css"/> -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/filter-tab.css">
+    <link href="css/boxicons.min.css" rel="stylesheet">
+    <link href="css/glightbox.min.css" rel="stylesheet">
 
     <!-- External Links End -->
     <title>Eden</title>
+    <style>
+
+     
+        </style>
 </head>
 <style>
  
@@ -36,25 +42,6 @@
                 <div class="container-fluid p-0">
                     <a href="index.html" class="navbar-brand"><img src="./images/eden-logo.png" alt="eden-logo" class="navbar-logo"></a>
                     
-                    <!-- <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="menu-icon-bar"></span>
-                        <span class="menu-icon-bar"></span>
-                        <span class="menu-icon-bar"></span>
-                    </button>
-       -->
-                    
-                    <!-- <div id="main-nav" class=" justify-content-center">
-                        <ul class="navbar-nav ml-auto">
-                            <li><a href="#" class="nav-item nav-link active">
-ABOUT
-                            </a></li>
-                            <li><a href="#" class="nav-item nav-link">SERVICES</a></li>
-                            
-                            <li><a href="#" class="nav-item nav-link">PROJECTS</a></li>
-                            <li><a href="#contact-us" class="nav-item nav-link">CONTACT</a></li>
-    
-                        </ul>
-                    </div> -->
                     <aside class="menu">
                       <ul>
                         <li>
@@ -121,7 +108,7 @@ ABOUT
           </div>
     </div>
 
-    <section class="what-we-do-eden">
+    <section class="container-common">
       <div class="container-fluid eden-container">
           <div class="row">
            
@@ -145,7 +132,7 @@ ABOUT
 
     <!-- Filter Tab -->
 <!-- Dual Design -->
-<div>
+ <div>
   <ul class="nav nav-tabs switch-tabs nav-pills flex-column flex-sm-row text-center" id="myTab" role="tablist">
       <li class="nav-item flex-sm-fill">
         <button class="nav-link switch-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true"><img src="./images/location.png" alt="location"></button>
@@ -157,135 +144,147 @@ ABOUT
 
   <div class="tab-content" id="myTabContent">
       <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-        <div class="container-fluid eden-container">
-          <div class="row">
-          <div class="left-space">
-            <div id="filters" class="toolbar mb-3 mt-2">
-              <button class="fil-cat all-tab filter active shadow-none" href=""  data-filter="all"><span class="tab__link">All</span></button>
-              <button class="fil-cat Residential-tab filter shadow-none" data-rel="web" data-filter=".web"><span class="tab__link">Residential Projetcs</span></button>
-              <button class="fil-cat Commercial-tab filter shadow-none" data-rel="flyers" data-filter=".flyers"><span class="tab__link">Commercial Projects</span></button> 
-              <button class="fil-cat hotel-tab filter shadow-none" data-rel="bcards" data-filter=".bcards"><span class="tab__link">Hotel Projects</span></button>
-              <button class="fil-cat other-tab filter shadow-none" data-rel="bcards" data-filter=".bcards"><span class="tab__link">Other Projects</span></button>
-            </div> 
-                  </div>
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio section-bg">
+      
+      <div class="" >
+        <div class="row">
+          <div class="col-lg-12 d-flex justify-content-center" >
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active fil-cat all-tab shadow-none"><span class="tab__link">All</span></li>
+              <li data-filter=".filter-app" class="fil-cat Residential-tab filter shadow-none"><span class="tab__link">Residential</span></li>
+              <li data-filter=".filter-card" class="fil-cat Commercial-tab filter shadow-none"><span class="tab__link">Commercial</span></li>
+              <li data-filter=".filter-web" class="fil-cat hotel-tab filter shadow-none"><span class="tab__link">hotel</span></li>
+              <li data-filter=".filter-web" class="fil-cat other-tab filter shadow-none"><span class="tab__link">other</span></li>
+             </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="images/tabpic-1.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Aastha Projects</h4>
+                <div class="portfolio-links">
+                  <a href="images/tabpic-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Residential"><img src="./images/plus-view.svg"></a>
                 </div>
-      </div>
-    <div style="clear:both;"></div>     
-    <div id="filterTab"> 
-      <div class="tile scale-anm web" >
-        <img src="images/tabpic-1.jpg" alt="" />
-        <div class="label">
-          <div class="label-text">
-            <h4>Aastha Projects</h4>
-    
+              </div>
+            </div>
           </div>
-          <div class="label-bg"> </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="images/tabpic-2.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Aastha Projects</h4>
+                <div class="portfolio-links">
+                  <a href="images/tabpic-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Residential"><img src="./images/plus-view.svg"></a>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="images/tabpic-1.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Aastha Projects</h4>
+                <div class="portfolio-links">
+                  <a href="images/tabpic-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Residential"><img src="./images/plus-view.svg"></a>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="images/tabpic-1.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Aastha Projects</h4>
+                <div class="portfolio-links">
+                  <a href="images/tabpic-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Residential"><img src="./images/plus-view.svg"></a>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="images/tabpic-1.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Aastha Projects</h4>
+                <div class="portfolio-links">
+                  <a href="images/tabpic-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Residential"><img src="./images/plus-view.svg"></a>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="images/tabpic-1.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Aastha Projects</h4>
+                <div class="portfolio-links">
+                  <a href="images/tabpic-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Residential"><img src="./images/plus-view.svg"></a>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="images/tabpic-1.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Aastha Projects</h4>
+                <div class="portfolio-links">
+                  <a href="images/tabpic-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Residential"><img src="./images/plus-view.svg"></a>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="images/tabpic-1.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Aastha Projects</h4>
+                <div class="portfolio-links">
+                  <a href="images/tabpic-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Residential"><img src="./images/plus-view.svg"></a>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="images/tabpic-1.jpg" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Aastha Projects</h4>
+                <div class="portfolio-links">
+                  <a href="images/tabpic-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Residential"><img src="./images/plus-view.svg"></a>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
+
       </div>
-      <div class="tile scale-anm web ">
-        <img src="images/tabpic-2.jpg" alt="" />
-            <div class="label">
-          <div class="label-text">
-            <h4>Project Name</h4>
-    
-          </div>
-          <div class="label-bg"> </div>
-        </div>
-      </div>
-      <div class="tile scale-anm web" >
-        <img src="images/tabpic-3.jpg" alt="" />
-        <div class="label">
-          <div class="label-text">
-            <h4>Project Name</h4>
-    
-          </div>
-          <div class="label-bg"> </div>
-        </div>
-      </div>
-      <div class="tile scale-anm flyers">
-        <img src="images/tabpic-2.jpg" alt="" />
-            <div class="label">
-          <div class="label-text">
-            <h4>Project Name</h4>
-    
-          </div>
-          <div class="label-bg"> </div>
-        </div>
-      </div>
-      <div class="tile scale-anm flyers">
-        <img src="images/tabpic-3.jpg" alt="" />
-        <div class="label">
-          <div class="label-text">
-            <h4>Project Name</h4>
-    
-          </div>
-          <div class="label-bg"> </div>
-        </div>
-      </div>
-      <div class="tile scale-anm bcards" >
-        <img src="images/tabpic-1.jpg" alt="" />
-            <div class="label">
-          <div class="label-text">
-            <h4>Project Name</h4>
-    
-          </div>
-          <div class="label-bg"> </div>
-        </div>
-      </div>
-      <div class="tile scale-anm bcards" >
-        <img src="images/tabpic-2.jpg" alt="" /> 
-            <div class="label">
-          <div class="label-text">
-            <h4>Project Name</h4>
-    
-          </div>
-          <div class="label-bg"> </div>
-        </div> 
-      </div>
-        <div class="tile scale-anm bcards" >
-        <img src="images/tabpic-3.jpg" alt="" />
-            <div class="label">
-          <div class="label-text">
-            <h4>Project Name</h4>
-    
-          </div>
-          <div class="label-bg"> </div>
-        </div>
-      </div>
-      <div class="tile scale-anm web ">
-        <img src="images/tabpic-1.jpg" alt="" />
-            <div class="label">
-          <div class="label-text">
-            <h4>Project Name</h4>
-    
-          </div>
-          <div class="label-bg"> </div>
-        </div>
-      </div>
-        <div class="tile scale-anm bcards" >
-        <img src="images/tabpic-2.jpg" alt="" />
-            <div class="label">
-          <div class="label-text">
-            <h4>Project Name</h4>
-    
-          </div>
-          <div class="label-bg"> </div>
-        </div>
-      </div>
-      <div class="tile scale-anm web" >
-        <img src="images/tabpic-3.jpg" alt="" />
-            <div class="label">
-          <div class="label-text">
-            <h4>Project Name</h4>
-    
-          </div>
-          <div class="label-bg"> </div>
-        </div>
-      </div> 
-    </div>
-    
+    </section><!-- End Portfolio Section -->
+
     <div style="clear:both;"></div>
-        <!-- Filter Tab End -->
+      
       </div>
       <div class="tab-pane fade show" id="profile" role="tabpanel" aria-labelledby="profile-tab">
         Hi here
@@ -293,6 +292,7 @@ ABOUT
   </div>
 </div>
 <!-- Dual Design End -->
+
 
 <!-- Testimonial -->
 
@@ -460,30 +460,13 @@ ABOUT
     <script src="js/jQuery.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <!-- swiper js -->
-    <script src="js/swiperjs.js"></script>
     <script src="js/typewriter.js"></script>
-    <!-- Swiperjs end -->
-    <script src="js/vue.min.js"></script>
-    <script src="js/magnetic.js"></script>
-    <script src="js/GridHorizontal.js"></script>
+    <script src="js/glightbox.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/swiperjs.js"></script>
     <script src="js/custom.js"></script>
-    <script>
-      jQuery('#filterTab').mixItUp({  
 
-      selectors: {
-        target: '.tile',
-        filter: '.filter',
-        sort: '.sort-btn'
-      },
-
-          animation: {
-          animateResizeContainer: false,
-          effects: 'fade scale'
-        }
-
-      });
-    </script>
     <script>
         new TypeWriter('#email-typewirte', ['johnduo@email.com']);
         new TypeWriter('#name-typewirte', ['John Duo']);
@@ -491,21 +474,5 @@ ABOUT
         new TypeWriter('#company-typewirte', ['eden design']);
         new TypeWriter('#comment-typewirte', ['let us know your thoughts']);
     </script>
-
-<script>
-
-
-let mm = new MagnetMouse({
-  magnet: {
-    element: '.magnet'
-  },
-  follow: {
-    element: '.follow'
-  }
-});
-
-mm.init();
-</script>
-
 </body>
 </html>

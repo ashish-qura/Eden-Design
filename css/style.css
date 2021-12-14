@@ -484,6 +484,10 @@ filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(298deg) brightness(102%
  padding: 100px 40px; 
  /* padding: 100px 40px 100px 120px; */
 }
+.container-common
+{
+  padding: 60px 40px;
+}
 .our-work-patch
 {
   padding: 20px 0 25px 0 !important;
@@ -795,11 +799,11 @@ filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(298deg) brightness(102%
   font-size: 36px;
   line-height: 42px;
   margin: 0;
-  padding: 35px 0 45px 0;
+  padding: 15px 0 25px 0;
 }
 .content-detail-sm
 {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
   line-height: 36px;
   color: #666666;
@@ -1131,6 +1135,11 @@ li.prev_slide .image-slider-work {
 	width: 3.5rem;
 }
 @media screen and ( max-width: 550px ) {
+  .portfolio #portfolio-flters li
+  {
+    display: block !important;
+    text-align: left;
+  }
   
   .cd-slider
   {
