@@ -3,6 +3,50 @@
 document.getElementById("currentYear").innerHTML = new Date().getFullYear();
 
 
+
+
+$(document).ready(function(){
+	// Switch Tab portfolio
+	$("#switch-id").change(function () {
+		if ($(this).is(":checked")) {
+			$(".contentB").show();
+			$(".contentA").hide();
+		} else {
+			$(".contentB").hide();
+			$(".contentA").show();
+		}
+	});
+
+    // set the image-map width and height to match the img size
+    $('#image-map').css({'width':$('#image-map img').width(),
+                      'height':$('#image-map img').height()
+    })
+    
+    //tooltip direction
+    var tooltipDirection;
+                 
+    for (i=0; i<$(".pin").length; i++)
+    {               
+        // set tooltip direction type - up or down             
+        if ($(".pin").eq(i).hasClass('pin-down')) {
+            tooltipDirection = 'tooltip-map-down';
+        } else {
+            tooltipDirection = 'tooltip-map-up';
+            }
+    
+        // append the tooltip-map
+        $("#image-map").append("<div style='left:"+$(".pin").eq(i).data('xpos')+"px;top:"+$(".pin").eq(i).data('ypos')+"px' class='" + tooltipDirection +"'>\
+                                            <div class='tooltip-map'>" + $(".pin").eq(i).html() + "</div>\
+                                    </div>");
+    }    
+    
+    // show/hide the tooltip-map
+    $('.tooltip-map-up, .tooltip-map-down').mouseenter(function(){
+                $(this).children('.tooltip-map').fadeIn(100);
+            }).mouseleave(function(){
+                $(this).children('.tooltip-map').fadeOut(100);
+            })
+});
 // Testimonial Slider
 
 var menu = ['Viraj Sanghavi', 'Tirth Patel', 'Swapnil Shah']

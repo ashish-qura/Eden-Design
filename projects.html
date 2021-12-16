@@ -133,17 +133,13 @@
     <!-- Filter Tab -->
 <!-- Dual Design -->
  <div>
-  <ul class="nav nav-tabs switch-tabs nav-pills flex-column flex-sm-row text-center" id="myTab" role="tablist">
-      <li class="nav-item flex-sm-fill">
-        <button class="nav-link switch-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true"><img src="./images/location.png" alt="location"></button>
-      </li>
-      <li class="nav-item flex-sm-fill">
-        <button class="nav-link switch-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false"><img src="./images/tile-view.png" alt="tile-view"></button>
-      </li>
-  </ul>
 
-  <div class="tab-content" id="myTabContent">
-      <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+  <span class="switch">
+   
+     <input type="checkbox" class="switch" id="switch-id">
+     <label for="switch-id"><span class="portfolio-tab-section"><img src="./images/tile-view.png" alt="tile-view"></span> <span class="map-tab-section"><img src="./images/location.png" alt="location"></span></label>
+   </span>
+ <div class="contentA">
     <!-- ======= Portfolio Section ======= -->
     <section id="portfolio" class="portfolio section-bg">
       
@@ -282,15 +278,45 @@
 
       </div>
     </section><!-- End Portfolio Section -->
-
-    <div style="clear:both;"></div>
-      
-      </div>
-      <div class="tab-pane fade show" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-        Hi here
-      </div>
   </div>
-</div>
+
+  <div class="contentB">
+    <div id="image-map">
+      <img width="611" height="438" src="./images/map-tooltip.png" alt="Our Locations">   
+     <div class="pin pin-down" data-xpos="115" data-ypos="125">  
+       <h2>Willowbrook Place</h2>     
+       <ul>
+         <li><strong>123 Street Address</strong></li>
+         <li>City, ST, 12345</li>
+         <li><strong>(555) 555-5555</strong></li>
+         <li><a href="#" target="_blank">Website</a></li>
+         <li>Coming in Spring 2015</li>
+       </ul>
+     </div>
+     <div class="pin pin-down" data-xpos="215" data-ypos="175">  
+       <h2>Ambergrove Place</h2>     
+       <ul>
+         <li><strong>123 Street Address</strong></li>
+         <li>City, ST, 12345</li>
+         <li><strong>(555) 555-5555</strong></li>
+         <li><a href="#" target="_blank">Website</a></li>
+         <li>Coming in Spring 2015</li>
+       </ul>
+     </div>
+     <div class="pin pin-down" data-xpos="255" data-ypos="65">  
+       <h2>Chelsea Place</h2>     
+       <ul>
+         <li><strong>123 Street Address</strong></li>
+         <li>City, ST, 12345</li>
+         <li><strong>(555) 555-5555</strong></li>
+         <li><a href="#" target="_blank">Website</a></li>
+         <li>Coming in Spring 2015</li>
+       </ul>
+     </div>
+   </div>
+  </div>
+
+  </div>
 <!-- Dual Design End -->
 
 
