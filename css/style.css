@@ -32,6 +32,19 @@ ul {
     color: initial;
     text-decoration: none;
 }
+.mb_100
+{
+  margin-bottom: 100px;
+}
+
+.f_right
+{
+  float: right;
+}
+.f_left
+{
+  float: left;
+}
 .eden-container {
   max-width: 1600px;
   width: 100%;
@@ -500,6 +513,76 @@ filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(298deg) brightness(102%
 {
   padding: 0 40px;
 }
+.about-our-work .our-work-left
+{
+  padding-left: 20px;
+ 
+}
+.about-our-work .our-work-left .value-client
+{
+  padding-top: 60px;
+  border-top: 1px solid black;
+ 
+}
+.about-our-work .our-work-left h1
+{
+  font-size: 60px;
+  font-weight: bold;
+  position: relative;
+}
+.about-our-work .our-work-left .ow-1::before
+{
+  content: "01";
+  position: absolute;
+  top: -10px;
+  left: -20px;
+  font-size: initial;
+}
+.about-our-work .our-work-left .value-client .ow-2
+{
+  color: black;
+  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+.about-our-work .our-work-left .value-client .ow-2::before
+{
+  content: "02";
+  position: absolute;
+  top: -10px;
+  left: -20px;
+  font-size: initial;
+  -webkit-text-fill-color: black; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 0;
+  -webkit-text-stroke-color: black;
+}
+.about-our-work .our-work-left ul
+{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-bottom: 60px;
+}
+.about-our-work .our-work-left ul li 
+{
+  position: relative;
+  padding: 5px 15px;
+  font-size: 16px;
+}
+.about-our-work .our-work-left ul li::before 
+{
+  content: '';
+  position: absolute;
+  bottom: 11px;
+  left: 0;
+  width: 0;
+  height: 0;
+  width: 0;
+  border-bottom: 7px solid orange;
+  border-right: 7px solid transparent;
+  -webkit-transition: opacity .3s ease-in,visibility .3s ease-in;
+  transition: opacity .3s ease-in,visibility .3s ease-in;
+
+}
 .p-sm 
 {
   font-size: 1.2rem;
@@ -783,6 +866,17 @@ filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(298deg) brightness(102%
     position: relative;
     padding: 0;
 }
+.sm-pre-head
+{
+  font-size: 18px;
+  font-weight: bold;
+  position: relative;
+  padding: 0;
+}
+.orange-bold
+{
+  color: #faad00;
+}
 .pre-head::before
 {
   content: "";
@@ -807,6 +901,19 @@ filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(298deg) brightness(102%
   font-weight: 500;
   line-height: 36px;
   color: #666666;
+}
+.content-detail-light-lg
+{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  color: #222842;
+  font-size: 6.25rem;
+}
+.seperate-section span
+{
+  display: block;
+  line-height: 70px;
+  text-align: left;
 }
 .footer-credit
 {
@@ -1664,7 +1771,12 @@ and (orientation : landscape) {
   display: none;
 }
 }
-
+@media screen and (max-width: 991px) {
+  .about-us-black .order-about-us
+  {
+    order: -1;
+  }
+}
 @media screen and (max-width: 990px) {
   .main-head-eden
   {
@@ -1861,7 +1973,14 @@ padding-right: var(--bs-gutter-x,.75rem);
 }
 
 @media screen and (min-width: 767px) {
- 
+  .pr_gap
+  {
+    padding-right: 130px;
+  }
+  .pl_gap
+  {
+    padding-left: 130px;
+  }
   .swiper-container
   {
     height: 300px;
