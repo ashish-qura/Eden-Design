@@ -562,18 +562,23 @@ filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(298deg) brightness(102%
   grid-template-columns: repeat(2, 1fr);
   padding-bottom: 60px;
 }
-.about-our-work .our-work-left ul li 
+.about-our-work .our-work-left ul li
 {
   position: relative;
-  padding: 5px 15px;
+  padding-right: 10px;
   font-size: 16px;
 }
-.about-our-work .our-work-left ul li::before 
+.about-our-work .our-work-left ul li .tick-down-point
+{
+position: relative;
+padding: 7px 0;
+}
+.about-our-work .our-work-left ul li .tick-down-point::before 
 {
   content: '';
   position: absolute;
   bottom: 11px;
-  left: 0;
+  left: -11px;
   width: 0;
   height: 0;
   width: 0;
@@ -581,8 +586,8 @@ filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(298deg) brightness(102%
   border-right: 7px solid transparent;
   -webkit-transition: opacity .3s ease-in,visibility .3s ease-in;
   transition: opacity .3s ease-in,visibility .3s ease-in;
-
 }
+
 .p-sm 
 {
   font-size: 1.2rem;
@@ -685,9 +690,10 @@ filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(298deg) brightness(102%
 }
 
 #burgerBtn {
-  border-top: 2px solid #faad00;
-  height: 25px;
-  width: 30px;
+  background-color: #faad00;
+  height: 35px;
+  width: 35px;
+  padding: 5px;
   box-sizing: border-box;
   position: fixed;
   z-index: 30;
@@ -700,37 +706,10 @@ filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(298deg) brightness(102%
   -o-transition: all 0.3s ease-in;
   transition: all 0.3s ease-in;
 }
-#burgerBtn:before {
-  content: "";
-  display: block;
-  position: absolute;
-  height: 2px;
-  width: 30px;
-  left: 0;
-  background: #faad00;
-  top: 10px;
-  -webkit-transition: all 0.3s ease-in;
-  -moz-transition: all 0.3s ease-in;
-  -khtml-transition: all 0.3s ease-in;
-  -o-transition: all 0.3s ease-in;
-  transition: all 0.3s ease-in;
+#burgerBtn svg 
+{
+  color: white;
 }
-#burgerBtn:after {
-  content: "";
-  display: block;
-  position: absolute;
-  height: 2px;
-  width: 30px;
-  left: 0;
-  background: #faad00;
-  bottom: 0;
-  -webkit-transition: all 0.3s ease-in;
-  -moz-transition: all 0.3s ease-in;
-  -khtml-transition: all 0.3s ease-in;
-  -o-transition: all 0.3s ease-in;
-  transition: all 0.3s ease-in;
-}
-
 #mobile-nav {
   position: fixed;
   list-style-type: none;
@@ -1784,7 +1763,8 @@ and (orientation : landscape) {
     line-height: 35px;
   }
   .card-cs>p {
-    font-size: 16px;
+    font-size: 18px;
+    line-height: 26px;
   }
  
 }
@@ -1919,6 +1899,7 @@ padding-right: var(--bs-gutter-x,.75rem);
 }
 @media screen and (max-width: 550px) 
 {
+
   .about-us-eden, .what-we-do-eden, .our-work-eden, .testimonial-slider-cover {
     padding: 25px;
   }

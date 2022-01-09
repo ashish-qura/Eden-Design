@@ -73,66 +73,7 @@ var mySwiper = new Swiper ('.swiper-container', {
   })
 // Testimonial Slider End
 
-var app = new Vue({
-    el: '#app',
-    data: {
-        currentSlide: 0,
-        isPreviousSlide: false,
-        isFirstLoad: true,
-        slides: [
-            {
-                headlineFirstLine: "EDEN-",
-				headlineSecondLine: "Our Story",
-				buttonName: "EDEN- OUR STORY",
-                // headlineSecondLine: "1",
-                bgImg: "https://i.postimg.cc/mrkth756/Layer-1.jpg",
-                
-            },
-            {
-                headlineFirstLine: "About",
-                headlineSecondLine: "Eden",
-				buttonName: "EDEN- OUR STORY",
-                bgImg: "https://i.postimg.cc/wjGj7WdX/sean-pollock-Ph-Yq704ffd-A-unsplash.jpg",
-          
-            },
-            {
-                headlineFirstLine: "Building",
-				headlineSecondLine: "Design",
-				buttonName: "EDEN- OUR STORY",
-                // headlineSecondLine: "Ultricies",
-                bgImg: "https://i.postimg.cc/xCZnMqKs/zq-lee-Dcy-L0-Io-CY0-A-unsplash.jpg",
-              
-            }
-        ]
-    },
-  mounted: function () {
-    var productRotatorSlide = document.getElementById("app");
-        var startX = 0;
-        var endX = 0;
 
-        productRotatorSlide.addEventListener("touchstart", (event) => startX = event.touches[0].pageX);
-
-        productRotatorSlide.addEventListener("touchmove", (event) => endX = event.touches[0].pageX);
-
-        productRotatorSlide.addEventListener("touchend", function(event) {
-            var threshold = startX - endX;
-
-            if (threshold < 150 && 0 < this.currentSlide) {
-                this.currentSlide--;
-            }
-            if (threshold > -150 && this.currentSlide < this.slides.length - 1) {
-                this.currentSlide++;
-            }
-        }.bind(this));
-  },
-    methods: {
-        updateSlide(index) {
-            index < this.currentSlide ? this.isPreviousSlide = true : this.isPreviousSlide = false;
-            this.currentSlide = index;
-            this.isFirstLoad = false;
-        }
-    }
-})
 
 jQuery(function($) {
     $(window).on('scroll', function() {
@@ -306,22 +247,22 @@ jQuery(function($) {
 // Main Banner slider End
 
 
-// Testimonial
-$(document).ready(function(){
-    $("#testimonial-slider").owlCarousel({
-        items:1,
-        itemsDesktop:[1000,2],
-        itemsDesktopSmall:[979,1],
-        itemsTablet:[768,1],
-        pagination:false,
-        navigation:true,
-        slideSpeed:1000,
-        singleItem:true,
-        transitionStyle:"goDown",
-        navigationText:["",""],
-        autoPlay:false
-    });
-});
+// // Testimonial
+// $(document).ready(function(){
+//     $("#testimonial-slider").owlCarousel({
+//         items:1,
+//         itemsDesktop:[1000,2],
+//         itemsDesktopSmall:[979,1],
+//         itemsTablet:[768,1],
+//         pagination:false,
+//         navigation:true,
+//         slideSpeed:1000,
+//         singleItem:true,
+//         transitionStyle:"goDown",
+//         navigationText:["",""],
+//         autoPlay:false
+//     });
+// });
 
 
 // Navbar For Mobile
@@ -335,12 +276,5 @@ burgerBtn.addEventListener('click', function() {
   mobile.classList.toggle('navigation');
 }, false);
 
-demo1.addEventListener('click', function() {
-  demo1.classList.add('active');
-  demo2.classList.remove('active');
-  demo3.classList.remove('active');
-  mobile.classList.add('demo1');
-  mobile.classList.remove('demo2', 'demo3', 'navigation');
-}, false);
 
 // Navbar For Mobile End

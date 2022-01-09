@@ -21,7 +21,7 @@
 </style>
 <body>
     <div id="mobileView" class="demo11">
-        <div id="burgerBtn"></div>
+        <div id="burgerBtn"><svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg></div>
         <ul id="mobile-nav">
           <li><a href="index.html">HOME</a></li>
           <li><a href="about-us.html">ABOUT</a></li>
@@ -595,6 +595,68 @@ ABOUT
     <script src="js/custom.js"></script>
     
     <!-- script End -->
+    <script>
+      var app = new Vue({
+    el: '#app',
+    data: {
+        currentSlide: 0,
+        isPreviousSlide: false,
+        isFirstLoad: true,
+        slides: [
+            {
+                headlineFirstLine: "EDEN-",
+				headlineSecondLine: "Our Story",
+				buttonName: "EDEN- OUR STORY",
+                // headlineSecondLine: "1",
+                bgImg: "https://i.postimg.cc/mrkth756/Layer-1.jpg",
+                
+            },
+            {
+                headlineFirstLine: "About",
+                headlineSecondLine: "Eden",
+				buttonName: "EDEN- OUR STORY",
+                bgImg: "https://i.postimg.cc/wjGj7WdX/sean-pollock-Ph-Yq704ffd-A-unsplash.jpg",
+          
+            },
+            {
+                headlineFirstLine: "Building",
+				headlineSecondLine: "Design",
+				buttonName: "EDEN- OUR STORY",
+                // headlineSecondLine: "Ultricies",
+                bgImg: "https://i.postimg.cc/xCZnMqKs/zq-lee-Dcy-L0-Io-CY0-A-unsplash.jpg",
+              
+            }
+        ]
+    },
+  mounted: function () {
+    var productRotatorSlide = document.getElementById("app");
+        var startX = 0;
+        var endX = 0;
+
+        productRotatorSlide.addEventListener("touchstart", (event) => startX = event.touches[0].pageX);
+
+        productRotatorSlide.addEventListener("touchmove", (event) => endX = event.touches[0].pageX);
+
+        productRotatorSlide.addEventListener("touchend", function(event) {
+            var threshold = startX - endX;
+
+            if (threshold < 150 && 0 < this.currentSlide) {
+                this.currentSlide--;
+            }
+            if (threshold > -150 && this.currentSlide < this.slides.length - 1) {
+                this.currentSlide++;
+            }
+        }.bind(this));
+  },
+    methods: {
+        updateSlide(index) {
+            index < this.currentSlide ? this.isPreviousSlide = true : this.isPreviousSlide = false;
+            this.currentSlide = index;
+            this.isFirstLoad = false;
+        }
+    }
+})
+    </script>
     <script>
         new TypeWriter('#email-typewirte', ['johnduo@email.com']);
         new TypeWriter('#name-typewirte', ['John Duo']);
