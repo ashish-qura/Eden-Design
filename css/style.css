@@ -568,17 +568,21 @@ filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(298deg) brightness(102%
   padding-right: 10px;
   font-size: 16px;
 }
-.about-our-work .our-work-left ul li .tick-down-point
+.about-our-work .our-work-left ul li .tick-down-point, .accordion .accordion-item .accordion-header .accordion-button .tick-down-point
 {
 position: relative;
-padding: 7px 0;
+padding: 7px 2px;
 }
-.about-our-work .our-work-left ul li .tick-down-point::before 
+.accordion-button
+{
+  padding: 4px;
+}
+.about-our-work .our-work-left ul li .tick-down-point::before, .accordion .accordion-item .accordion-header .accordion-button .tick-down-point::before
 {
   content: '';
   position: absolute;
-  bottom: 11px;
-  left: -11px;
+  bottom: 2px;
+  left: -15px;
   width: 0;
   height: 0;
   width: 0;
@@ -587,11 +591,23 @@ padding: 7px 0;
   -webkit-transition: opacity .3s ease-in,visibility .3s ease-in;
   transition: opacity .3s ease-in,visibility .3s ease-in;
 }
-
+.show-clipper
+{
+  font-size: 16px;
+}
+.accordion-button:not(.collapsed) {
+  color: black;
+  background-color: transparent;
+  box-shadow: none;
+}
 .p-sm 
 {
   font-size: 1.2rem;
   color: #c9c9c9;
+}
+.show-clipper.accordion-button::after
+{
+  display: none;
 }
 .btn-eden-target 
 {
@@ -1754,6 +1770,10 @@ and (orientation : landscape) {
   .about-us-black .order-about-us
   {
     order: -1;
+  }
+  .pad-upper-10
+  {
+    padding-top: 20px;
   }
 }
 @media screen and (max-width: 990px) {
