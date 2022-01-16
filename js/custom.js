@@ -11,41 +11,52 @@ $(document).ready(function(){
 		if ($(this).is(":checked")) {
 			$(".contentB").show();
 			$(".contentA").hide();
+			$(".all").show();
 		} else {
 			$(".contentB").hide();
 			$(".contentA").show();
 		}
 	});
-
-    // set the image-map width and height to match the img size
-    $('#image-map').css({'width':$('#image-map img').width(),
-                      'height':$('#image-map img').height()
-    })
+	
+$("#portfolio-flters li").click(function(){
+	var dataMap = $(this).data("map");
+	
+	if($(".tooltip-map-down").hasClass(dataMap))
+	{
+		$(".tooltip-map-down").hide();		
+		$('.'+dataMap+'').show();
+		
+	}
+});
+    // // set the image-map width and height to match the img size
+    // $('#image-map').css({'width':$('#image-map img').width(),
+    //                   'height':$('#image-map img').height()
+    // })
     
-    //tooltip direction
-    var tooltipDirection;
+    // //tooltip direction
+    // var tooltipDirection;
                  
-    for (i=0; i<$(".pin").length; i++)
-    {               
-        // set tooltip direction type - up or down             
-        if ($(".pin").eq(i).hasClass('pin-down')) {
-            tooltipDirection = 'tooltip-map-down';
-        } else {
-            tooltipDirection = 'tooltip-map-up';
-            }
+    // for (i=0; i<$(".pin").length; i++)
+    // {               
+    //     // set tooltip direction type - up or down             
+    //     if ($(".pin").eq(i).hasClass('pin-down')) {
+    //         tooltipDirection = 'tooltip-map-down';
+    //     } else {
+    //         tooltipDirection = 'tooltip-map-up';
+    //         }
     
-        // append the tooltip-map
-        $("#image-map").append("<div style='left:"+$(".pin").eq(i).data('xpos')+"px;top:"+$(".pin").eq(i).data('ypos')+"px' class='" + tooltipDirection +"'>\
-                                            <div class='tooltip-map'>" + $(".pin").eq(i).html() + "</div>\
-                                    </div>");
-    }    
+    //     // append the tooltip-map
+    //     $("#image-map").append("<div style='left:"+$(".pin").eq(i).data('xpos')+"px;top:"+$(".pin").eq(i).data('ypos')+"px' class='" + tooltipDirection +"'>\
+    //                                         <div class='tooltip-map'>" + $(".pin").eq(i).html() + "</div>\
+    //                                 </div>");
+    // }    
     
-    // show/hide the tooltip-map
-    $('.tooltip-map-up, .tooltip-map-down').mouseenter(function(){
-                $(this).children('.tooltip-map').fadeIn(100);
-            }).mouseleave(function(){
-                $(this).children('.tooltip-map').fadeOut(100);
-            })
+    // // show/hide the tooltip-map
+    // $('.tooltip-map-up, .tooltip-map-down').mouseenter(function(){
+    //             $(this).children('.tooltip-map').fadeIn(100);
+    //         }).mouseleave(function(){
+    //             $(this).children('.tooltip-map').fadeOut(100);
+    //         })
 });
 // Testimonial Slider
 

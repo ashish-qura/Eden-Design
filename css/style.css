@@ -524,13 +524,13 @@ filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(298deg) brightness(102%
   border-top: 1px solid black;
  
 }
-.about-our-work .our-work-left h1
+.about-our-work .our-work-left h1 .accordion-button
 {
   font-size: 60px;
   font-weight: bold;
   position: relative;
 }
-.about-our-work .our-work-left .ow-1::before
+.about-our-work .our-work-left .ow-1 .accordion-button::before
 {
   content: "01";
   position: absolute;
@@ -538,14 +538,13 @@ filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(298deg) brightness(102%
   left: -20px;
   font-size: initial;
 }
-.about-our-work .our-work-left .value-client .ow-2
+.about-our-work .our-work-left .value-client .ow-2 .accordion-button
 {
   color: black;
   -webkit-text-fill-color: white; /* Will override color (regardless of order) */
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
+  text-shadow: -1px -1px 0 #000000, 0px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 0px 1px 0 #000, 1px 1px 0 #000;
 }
-.about-our-work .our-work-left .value-client .ow-2::before
+.about-our-work .our-work-left .value-client .ow-2 .accordion-button::before
 {
   content: "02";
   position: absolute;
@@ -553,8 +552,7 @@ filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(298deg) brightness(102%
   left: -20px;
   font-size: initial;
   -webkit-text-fill-color: black; /* Will override color (regardless of order) */
-  -webkit-text-stroke-width: 0;
-  -webkit-text-stroke-color: black;
+ text-shadow: none;
 }
 .about-our-work .our-work-left ul
 {
@@ -581,8 +579,8 @@ padding: 7px 2px;
 {
   content: '';
   position: absolute;
-  bottom: 2px;
-  left: -15px;
+  bottom: 9px;
+  left: -9px;
   width: 0;
   height: 0;
   width: 0;
@@ -591,10 +589,7 @@ padding: 7px 2px;
   -webkit-transition: opacity .3s ease-in,visibility .3s ease-in;
   transition: opacity .3s ease-in,visibility .3s ease-in;
 }
-.show-clipper
-{
-  font-size: 16px;
-}
+
 .accordion-button:not(.collapsed) {
   color: black;
   background-color: transparent;
@@ -1237,6 +1232,9 @@ li.prev_slide .image-slider-work {
 	width: 3.5rem;
 }
 @media screen and ( max-width: 550px ) {
+  .about-our-work .our-work-left ul {
+    grid-template-columns: auto;
+  }
   .portfolio #portfolio-flters li
   {
     display: block !important;
@@ -1828,7 +1826,7 @@ padding-right: var(--bs-gutter-x,.75rem);
     padding: 50px;
   } */
   .pre-head::before {
-    left: -38px;
+    left: -42px;
     width: 30px;
 }
   .eden-about-us-img {
