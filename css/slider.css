@@ -344,9 +344,61 @@
 }
 @media (max-width: 730px)
 {
-  .pagination-container {
+  /* .pagination-container {
     display: flex;
+  } */
+  .case-slider__navigation
+  {
+    /* position: absolute;
+    z-index: 5;
+    bottom: 0;
+    right: 0; */
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    right: 5vw;
+    bottom: 32px;
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    text-align: right;
+    z-index: 5;
   }
+  .case-slider__navigation .slidermobilebtn:nth-child(1)
+  {
+    display: inline-block;
+  }
+
+  .slidermobilebtn
+  {
+   background:  transparent url(../images/arrow-slider.svg) no-repeat 50%/15px 12px;
+    border: 1px solid #fff;
+    cursor: pointer;
+    display: none;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    vertical-align: top;
+  }
+  .slidermobilebtn.prevSlider_btn{
+    transform: rotate(-180deg);
+}
+
+.slidermobilebtn:before {
+
+    content: "";
+    display: block;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 15px;
+    height: 12px;
+    transform-origin: center;
+}
 }
 @-webkit-keyframes slideLeft {
   from {

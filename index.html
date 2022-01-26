@@ -126,12 +126,20 @@ ABOUT
                 </div>
                </div>
             </div>
+            <div class="case-slider__navigation">
+              <div class="nextSlide_btn">
+                <button @click="nextSlide(index)" v-for="(slide, index) in slides" v-if="slides.length-1!=currentSlide"  class="slidermobilebtn"></button>
+              </div>
+              <div class="prevSlide_btn">
+                <button @click="prevSlide(index)" v-for="(slide, index) in slides" v-if="currentSlide!=0" class="slidermobilebtn prevSlider_btn"></button>
+              </div>
+            </div>
             <div class="controls-container">
               <button class="controls-button custom-btn btn--control " v-for="(slide, index) in slides" v-bind:class="{ active: index === currentSlide }" v-on:click="updateSlide(index)">{{ slide.buttonName }}</button>
             </div>
-            <div class="pagination-container">
+            <!-- <div class="pagination-container">
               <span class="pagination-item" v-for="(slide, index) in slides" v-bind:class="{ active: index === currentSlide }" v-on:click="updateSlide(index)"></span>
-            </div>
+            </div> -->
           </div>
     </div>
    
@@ -629,31 +637,38 @@ ABOUT
             }
         ]
     },
-  mounted: function () {
-    var productRotatorSlide = document.getElementById("app");
-        var startX = 0;
-        var endX = 0;
+  // mounted: function () {
+  //   var productRotatorSlide = document.getElementById("app");
+  //       var startX = 0;
+  //       var endX = 0;
 
-        productRotatorSlide.addEventListener("touchstart", (event) => startX = event.touches[0].pageX);
+  //       productRotatorSlide.addEventListener("touchstart", (event) => startX = event.touches[0].pageX);
 
-        productRotatorSlide.addEventListener("touchmove", (event) => endX = event.touches[0].pageX);
+  //       productRotatorSlide.addEventListener("touchmove", (event) => endX = event.touches[0].pageX);
 
-        productRotatorSlide.addEventListener("touchend", function(event) {
-            var threshold = startX - endX;
+  //       productRotatorSlide.addEventListener("touchend", function(event) {
+  //           var threshold = startX - endX;
 
-            if (threshold < 150 && 0 < this.currentSlide) {
-                this.currentSlide--;
-            }
-            if (threshold > -150 && this.currentSlide < this.slides.length - 1) {
-                this.currentSlide++;
-            }
-        }.bind(this));
-  },
+  //           if (threshold < 150 && 0 < this.currentSlide) {
+  //               this.currentSlide--;
+  //           }
+  //           if (threshold > -150 && this.currentSlide < this.slides.length - 1) {
+  //               this.currentSlide++;
+  //           }
+  //       }.bind(this));
+  // },
     methods: {
         updateSlide(index) {
             index < this.currentSlide ? this.isPreviousSlide = true : this.isPreviousSlide = false;
             this.currentSlide = index;
             this.isFirstLoad = false;
+        },
+        nextSlide(index){
+          
+            this.currentSlide++;
+        },
+        prevSlide(index){
+            this.currentSlide--;
         }
     }
 })

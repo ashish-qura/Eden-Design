@@ -1175,6 +1175,7 @@ li.prev_slide .image-slider-work {
   border: 0;
   cursor: pointer;
   background: transparent;
+
 }
 .prev::before, .next::before {
 	content: '';
@@ -1212,6 +1213,7 @@ li.prev_slide .image-slider-work {
 	right: .5rem;
 	left: auto;
 }
+
 .counter {
 	display: inline-block;
 	font-size: 2rem;
