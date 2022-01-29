@@ -127,11 +127,11 @@ ABOUT
                </div>
             </div>
             <div class="case-slider__navigation">
-              <div class="nextSlide_btn">
-                <button @click="nextSlide(index)" v-for="(slide, index) in slides" v-if="slides.length-1!=currentSlide"  class="slidermobilebtn"></button>
-              </div>
               <div class="prevSlide_btn">
                 <button @click="prevSlide(index)" v-for="(slide, index) in slides" v-if="currentSlide!=0" class="slidermobilebtn prevSlider_btn"></button>
+              </div>
+              <div class="nextSlide_btn">
+                <button @click="nextSlide(index)" v-for="(slide, index) in slides" v-if="slides.length-1!=currentSlide"  class="slidermobilebtn"></button>
               </div>
             </div>
             <div class="controls-container">

@@ -372,7 +372,7 @@
 
   .slidermobilebtn
   {
-   background:  transparent url(../images/arrow-slider.svg) no-repeat 50%/15px 12px;
+    background:  transparent url(../images/arrow-slider.svg) no-repeat 50%/15px 12px;
     border: 1px solid #fff;
     cursor: pointer;
     display: none;
