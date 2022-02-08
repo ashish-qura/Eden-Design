@@ -10,11 +10,13 @@ body {
 h1 {
   margin-bottom: 0.5em;
   font-size: 3.6rem;
+  transition: all 0.2s ease-in-out;
 }
 p {
   margin-bottom: 0.5em;
   line-height: 1.6;
   font-size: 16px;
+  transition: all 0.2s ease-in-out;
 }
 a:hover {
   color: #000000;
@@ -92,6 +94,98 @@ ul {
    height: 90px;
    
  }
+/* Model */
+
+/* The Modal (background) */
+.modalCall {
+  display: none;
+  position: fixed;
+  z-index: 200;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.watch-more
+{
+  cursor: pointer;
+}
+
+.call-popup {
+  display: none;
+  z-index: 999;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  transform: translate(-50%, -50%);
+  border: 1px solid #ccc;
+  background-color: #fff;
+  border-radius: 4px;
+}
+.call-popup.visible {
+  display: block;
+}
+.call-popup .close {
+  position: absolute;
+  right: 8px;
+  top: -3px;
+  font-weight: 900;
+  font-size: 28px;
+  color: black;
+  border-bottom: none;
+  cursor: pointer;
+}
+
+.call-popup .call-wrapper-container
+{
+  padding: 10px;
+  text-align: center;
+}
+.call-popup .call-wrapper-container h3
+{
+  color: #faad00;
+  padding: 10px 0;
+  font-size: 28px;
+}
+.call-popup .call-wrapper-container ul li
+{
+  font-size: 18px;
+  padding: 10px 0;
+}
+.call-popup .call-wrapper-container ul li:hover
+{
+  background-color: #FEEECF;
+}
+.call-popup .clip-copy
+{
+ background-color: #faaf0a;
+ text-align: center;
+ padding: 20px 0;
+ font-size: 20px;
+ cursor: pointer;
+}
+.call-popup .clip-copy:hover
+{
+ background-color: #dd9802;
+}
+@media only screen and (max-width: 560px) {
+
+  .call-popup
+  {
+    width: 90%;
+  }
+}
+.call-wrapper .call-container {
+  position: relative;
+  overflow: hidden;
+}
+
+
+
+/* Model */
  .btn--control-footer {
    background-color: #000;
    z-index: 1;
@@ -524,7 +618,7 @@ filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(298deg) brightness(102%
   border-top: 1px solid black;
  
 }
-.about-our-work .our-work-left h1 .accordion-button
+.about-our-work .our-work-left .fd-back .ow-2 button, .about-our-work .our-work-left .fd-back .ow-1 button
 {
   font-size: 60px;
   font-weight: bold;
@@ -538,13 +632,13 @@ filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(298deg) brightness(102%
   left: -20px;
   font-size: initial;
 }
-.about-our-work .our-work-left .value-client .ow-2 .accordion-button
+.about-our-work .our-work-left .fd-back .ow-2 .collapsed, .about-our-work .our-work-left .fd-back .ow-1 .collapsed
 {
   color: black;
   -webkit-text-fill-color: white; /* Will override color (regardless of order) */
   text-shadow: -1px -1px 0 #000000, 0px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 0px 1px 0 #000, 1px 1px 0 #000;
 }
-.about-our-work .our-work-left .value-client .ow-2 .accordion-button::before
+.about-our-work .our-work-left .fd-back .ow-2 button::before
 {
   content: "02";
   position: absolute;
@@ -899,11 +993,76 @@ padding: 7px 2px;
   color: #222842;
   font-size: 6.25rem;
 }
+.about-us-eden .block-wrapper
+{
+  padding: 50px 0;
+}
+.about-us-eden .block-wrapper .a-contact
+{
+  font-size: 20px;
+}
+.about-us-eden .block-wrapper .directive-icons 
+{
+  margin-top: 60px;
+}
+.about-us-eden .block-wrapper .directive-icons .round-wrapper
+{
+  border: 1px solid #faad00;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-right: 11px;
+  text-align: center;
+  line-height: 80px;
+}
+.about-us-eden .block-wrapper .directive-icons .round-wrapper.active
+{
+  background-color: #faad00;
+}
 .seperate-section span
 {
   display: block;
   line-height: 70px;
   text-align: left;
+}
+.about-qoute-context .seperate-section span
+{
+  display: block;
+  line-height: 146px;
+  font-size: 110px;
+  text-align: left;
+}
+@media screen and (max-width: 1200px)
+{
+  .about-qoute-context .seperate-section
+  {
+    padding: 10px 0;
+    
+  }
+  .about-qoute-context .seperate-section span
+  {
+    font-size: 70px;
+    line-height: normal;
+   
+  }
+}
+@media screen and (max-width: 550px)
+{
+  .about-us-eden .block-wrapper .directive-icons .round-wrapper
+{
+  border: 1px solid #faad00;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+}
+.about-us-eden .block-wrapper .directive-icons .round-wrapper img
+{
+  width: 20px;
+}
+.about-us-eden .block-wrapper .a-contact
+{
+  font-size: initial;
+}
 }
 .footer-credit
 {

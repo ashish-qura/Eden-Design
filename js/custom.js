@@ -84,7 +84,16 @@ var mySwiper = new Swiper ('.swiper-container', {
   })
 // Testimonial Slider End
 
+// Copy to Clipboard
+function copyToClipboard(element) {
+	var $temp = $("<input>");
+	$("body").append($temp);
+	$temp.val($(element).text()).select();
+	document.execCommand("copy");
+	$temp.remove();
+  }
 
+  // Copy to Clipboard End
 
 jQuery(function($) {
     $(window).on('scroll', function() {
