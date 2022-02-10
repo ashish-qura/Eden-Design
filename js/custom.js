@@ -90,7 +90,18 @@ function copyToClipboard(element) {
 	$("body").append($temp);
 	$temp.val($(element).text()).select();
 	document.execCommand("copy");
+	const textCopy = $("#changeCopyStatus");
+	const textToReplace = textCopy.text();
+	const newText = textToReplace.replace("COPY", "COPIED");
+	textCopy.text(newText); 
 	$temp.remove();
+
+	setTimeout(function(){
+		const textCopy = $("#changeCopyStatus");
+		const textToReplace = textCopy.text();
+		const newText = textToReplace.replace("COPIED", "COPY");
+		textCopy.text(newText); 
+	  }, 1500);
   }
 
   // Copy to Clipboard End
