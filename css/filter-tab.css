@@ -61,6 +61,7 @@
         padding: 2px 15px;
         margin-left: 55px;
       }
+
       .portfolio #portfolio-flters li {
         cursor: pointer;
         display: inline-block;
@@ -567,4 +568,19 @@ display: block;
 {
   color: white !important;
   font-size: 2rem !important;
+}
+
+@media screen and (max-width:1000px) {
+  .portfolio #portfolio-flters
+  {
+    margin-left: 0;
+  }
+  .portfolio #portfolio-flters li
+  {
+    display: block;
+  }
+  .fil-cat
+  {
+    text-align: left;
+  }
 }
