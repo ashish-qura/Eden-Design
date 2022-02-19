@@ -1960,6 +1960,10 @@ and (orientation : landscape) {
   {
     width: 120px;
   }
+  #mobile-nav
+  {
+    position: absolute;
+  }
   .btn-13
   {
     font-size: 10px;
