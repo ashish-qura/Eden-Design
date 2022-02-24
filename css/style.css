@@ -240,7 +240,7 @@ ul {
  {
 
   color: black;
-  border-radius: 0;
+  border-radius: 0px !important;
   border: none;
   height: 35px;
   margin: 10px 0;
@@ -255,6 +255,7 @@ ul {
  }
 
  .arrow-swing {
+   background-color: transparent;
 padding-left: 40px;
 font-weight: 500;
   transition: all 0.3s ease;
@@ -302,6 +303,7 @@ font-weight: 500;
 }
 .active.arrow-swing
 {
+border: none;
 border-bottom: 1px solid black;
 font-weight: bold;
 padding-left: 60px;
@@ -962,11 +964,6 @@ margin-right: 8px;
 }
 
 .demo11.navigation #mobileBodyContent {
-  -webkit-transform: scale(0.85);
-  -moz-transform: scale(0.85);
-  -khtml-transform: scale(0.85);
-  -o-transform: scale(0.85);
-  transform: scale(0.85);
   margin-left: 260px;
 }
 
@@ -1963,6 +1960,8 @@ and (orientation : landscape) {
   #mobile-nav
   {
     position: absolute;
+    height: 300px;
+    overflow: auto;
   }
   .btn-13
   {
@@ -2194,6 +2193,7 @@ padding-right: var(--bs-gutter-x,.75rem);
   .f-pcm {
     padding: 50px 50px 0 50px;
   }
+
   .content-slider {
     padding: 7rem 4rem 4rem 4rem;
     top: 100%;
@@ -2294,6 +2294,14 @@ padding-right: var(--bs-gutter-x,.75rem);
   {
     font-size: 16px;
     text-align: justify;
+  }
+  .footer-section .content-detail-sm
+  {
+    text-align: initial;
+  }
+  .footer-section .f-pcm
+  {
+   padding: 50px 20px 0 34px; 
   }
   .pre-head
   {
