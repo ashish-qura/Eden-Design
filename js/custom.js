@@ -303,9 +303,9 @@ var mobile = document.getElementById('mobileView');
 var demo1 = document.getElementById('demo11');
 
 
-burgerBtn.addEventListener('click', function() {
-  mobile.classList.toggle('navigation');
-}, false);
+$( "#burgerBtn" ).click(function() {
+	$("#mobile-nav").fadeToggle( "slow", "linear" );
+  });
 
 
 // Navbar For Mobile End
