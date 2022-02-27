@@ -305,7 +305,15 @@ var demo1 = document.getElementById('demo11');
 
 $( "#burgerBtn" ).click(function() {
 	$("#mobile-nav").fadeToggle( "slow", "linear" );
-  });
+	if($("#openMe").is(":visible") == true)
+	{
+		$("#openMe").hide();
+		$("#closeMe").show();
+	}else{
+		$("#openMe").show();
+		$("#closeMe").hide();
+	}
 
+  });
 
 // Navbar For Mobile End
