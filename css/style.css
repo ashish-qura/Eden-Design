@@ -253,11 +253,12 @@ ul {
    padding-bottom: 10px;
    border-bottom: 1px solid black !important;
  }
-
+/* 
  .arrow-swing {
-   background-color: transparent;
-padding-left: 40px;
-font-weight: 500;
+  background-color: transparent;
+  cursor: pointer;
+  padding-left: 40px;
+  font-weight: 500;
   transition: all 0.3s ease;
 }
 
@@ -335,6 +336,47 @@ padding-left: 60px;
   left: -36px;
   margin-left: 40px;
   transition: all 0.3s ease;
+} */
+
+.long-arrow-right{
+  display: block;
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  border-top: 1.5px solid #000;
+  border-left: 1.5px solid #000;
+  transition: all 0.3s ease;
+}
+.long-arrow-right{
+ transform: rotate(135deg);
+}
+
+.long-arrow-right::after{
+  content: "";
+  display: block;
+  width: 1px;
+  height: 25px;
+  background-color: black;
+  transform: rotate(-45deg) translate(8px, 2px);
+  left: 0;
+  top: 0;
+  transition: all 0.3s ease;
+}
+.cs-nav-tabtext
+{
+  margin-left: 30px;
+}
+.cs-nav-link:hover, .cs-nav-link.active
+{
+  padding-left: 30px;
+  font-weight: 700;
+  border-bottom: 1px solid black;
+}
+
+.cs-nav-link:hover .long-arrow-right::after , .cs-nav-link.active .long-arrow-right::after
+{
+  height: 41px;
+  transform: rotate(-45deg) translate(14px, 5px);
 }
 /* Navigation */
 .navbar {
@@ -1428,6 +1470,49 @@ li.prev_slide .image-slider-work {
 .prev, .next, .counter {
 	vertical-align: middle;
 }
+.next{
+  position: absolute;
+  top: 9px;
+  left: 80px;
+  width: 13px;
+  height: 13px;
+  border: none;
+  background-color: transparent;
+  border-top: 1.5px solid #000;
+  border-left: 1.5px solid #000;
+  transition: all 0.3s ease;
+}
+.prev{
+  position: absolute;
+  top: 9px;
+  left: -50px;
+  width: 13px;
+  height: 13px;
+  border: none;
+  background-color: transparent;
+  border-top: 1.5px solid #000;
+  border-left: 1.5px solid #000;
+  transition: all 0.3s ease;
+}
+.next{
+ transform: rotate(135deg);
+}
+.prev
+{
+  transform: rotate(-45deg);
+}
+.next::after,.prev::after{
+  content: "";
+  display: block;
+  width: 1px;
+  height: 25px;
+  background-color: black;
+  transform: rotate(-45deg) translate(5px, -2px);
+  left: 0;
+  top: 0;
+  transition: all 0.3s ease;
+}
+/* 
 .prev, .next {
 	position: relative;
 	display: inline-block;
@@ -1473,7 +1558,7 @@ li.prev_slide .image-slider-work {
 .next::after {
 	right: .5rem;
 	left: auto;
-}
+} */
 
 .counter {
 	display: inline-block;
@@ -1491,9 +1576,9 @@ li.prev_slide .image-slider-work {
 	content: '/';
 	margin: 0 1rem;
 }
-.prev:hover::after, .next:hover::after {
+/* .prev:hover::after, .next:hover::after {
 	width: 3.5rem;
-}
+} */
 @media screen and ( max-width: 550px ) {
   .about-our-work .our-work-left ul {
     grid-template-columns: auto;
@@ -2217,6 +2302,11 @@ padding-right: var(--bs-gutter-x,.75rem);
   }
   .next::before {
     border-left-color: rgb(255, 255, 255);
+  }
+  .next , .prev 
+  {
+    border-top: 1.5px solid #fff;
+    border-left: 1.5px solid #fff;
   }
   .nav_arrows {
     position: absolute;
