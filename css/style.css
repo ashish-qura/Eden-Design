@@ -1500,7 +1500,7 @@ li.prev_slide .image-slider-work {
   top: 9px;
   left: 80px;
   width: 13px;
-  height: 13px;
+  height: 13px !important;
   border: none;
   background-color: transparent;
   border-top: 1.5px solid #000;
