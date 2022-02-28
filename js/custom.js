@@ -155,12 +155,12 @@ jQuery(function($) {
 		nav.className = 'nav_arrows';
 
 		//create button prev
-		var prevbtn = document.createElement('button');
+		var prevbtn = document.createElement('a');
 		prevbtn.className = 'prev';
 		prevbtn.setAttribute('aria-label', 'Prev');
 
 		//create button next
-		var nextbtn = document.createElement('button');
+		var nextbtn = document.createElement('a');
 		nextbtn.className = 'next';
 		nextbtn.setAttribute('aria-label', 'Next');
 

@@ -340,7 +340,7 @@ padding-left: 60px;
 #closeMe
 {
   display: none;
-  padding: 5px;
+  
 }
 .long-arrow-right{
   display: block;
@@ -1492,51 +1492,31 @@ li.prev_slide .image-slider-work {
 	clip: rect(0, 0, 50rem, 0);
 }
 
-.prev, .next, .counter {
+ .counter {
 	vertical-align: middle;
 }
+.next, .prev{
+background-image: url("/images/right-arrow-slider.svg");
+background-repeat: no-repeat;
+background-size: 50px;
+width: 50px;
+height: 50px;
+position: absolute;
+background-size: 20px;
+top: -25px;
+cursor: pointer;
+}
 .next{
-  position: absolute;
-  top: 9px;
-  left: 80px;
-  width: 13px;
-  height: 13px !important;
-  border: none;
-  background-color: transparent;
-  border-top: 1.5px solid #000;
-  border-left: 1.5px solid #000;
-  transition: all 0.3s ease;
+  background-image: url("/images/right-arrow-slider.svg");
+  right: -70px;
+  top: 4px;  
 }
 .prev{
-  position: absolute;
-  top: 9px;
-  left: -50px;
-  width: 13px;
-  height: 13px;
-  border: none;
-  background-color: transparent;
-  border-top: 1.5px solid #000;
-  border-left: 1.5px solid #000;
-  transition: all 0.3s ease;
-}
-.next{
- transform: rotate(135deg);
-}
-.prev
-{
-  transform: rotate(-45deg);
-}
-.next::after,.prev::after{
-  content: "";
-  display: block;
-  width: 1px;
-  height: 25px;
-  background-color: black;
-  transform: rotate(-45deg) translate(5px, -2px);
-  left: 0;
-  top: 0;
-  transition: all 0.3s ease;
-}
+  background-image: url("/images/right-arrow-slider.svg");
+  transform: rotate(180deg);
+  left: -70px;
+  }
+
 /* 
 .prev, .next {
 	position: relative;
@@ -2322,19 +2302,10 @@ padding-right: var(--bs-gutter-x,.75rem);
     left: 50%;
     transform: translate(-50%, -50%);
   }
-  .prev::after, .next::after {
-    background: #fff;
-  }
-  .prev::before, .next::before {
-    border-right-color: rgb(255, 255, 255);
-  }
-  .next::before {
-    border-left-color: rgb(255, 255, 255);
-  }
+
   .next , .prev 
   {
-    border-top: 1.5px solid #fff;
-    border-left: 1.5px solid #fff;
+    background-image: url("/images/right-arrow-slider-white.svg");
   }
   .nav_arrows {
     position: absolute;
