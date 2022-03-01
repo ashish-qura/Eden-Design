@@ -246,6 +246,7 @@ ul {
   margin: 10px 0;
   font-size: 1.5rem;
   transition: 0.3s ease-in;
+  cursor: pointer;
   position: relative;
  }
  .cs-nav-link:hover 
@@ -1512,7 +1513,7 @@ cursor: pointer;
   top: 4px;  
 }
 .prev{
-  background-image: url("/images/right-arrow-slider.svg");
+  background-image: url("../images/right-arrow-slider.svg");
   transform: rotate(180deg);
   left: -70px;
   }
