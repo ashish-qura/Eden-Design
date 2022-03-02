@@ -6,6 +6,15 @@ document.getElementById("currentYear").innerHTML = new Date().getFullYear();
 
 
 $(document).ready(function(){
+
+	$(window).scroll(function() {
+		//Checking if each items to animate are 
+		//visible in the viewport
+		$("h2[data-max]").each(function() {
+		  inVisible($(this));
+		});
+	  })
+
 	// Switch Tab portfolio
 	$("#switch-id").change(function () {
 		if ($(this).is(":checked")) {
@@ -317,3 +326,43 @@ $( "#burgerBtn" ).click(function() {
   });
 
 // Navbar For Mobile End
+
+
+//Scroll Counter
+function inVisible(element) {
+	//Checking if the element is
+	//visible in the viewport
+	var WindowTop = $(window).scrollTop();
+	var WindowBottom = WindowTop + $(window).height();
+	var ElementTop = element.offset().top;
+	var ElementBottom = ElementTop + element.height();
+	//animating the element if it is
+	//visible in the viewport
+	if ((ElementBottom <= WindowBottom) && ElementTop >= WindowTop)
+	  animate(element);
+  }
+  
+  function animate(element) {
+	//Animating the element if not animated before
+	if (!element.hasClass('ms-animated')) {
+	  var maxval = element.data('max');
+	  var html = element.html();
+	  element.addClass("ms-animated");
+	  $({
+		countNum: element.html()
+	  }).animate({
+		countNum: maxval
+	  }, {
+		//duration 5 seconds
+		duration: 2000,
+		easing: 'linear',
+		step: function() {
+		  element.html(html + Math.floor(this.countNum));
+		},
+		complete: function() {
+		  element.html(html + this.countNum );
+		}
+	  });
+	}
+  
+  }
