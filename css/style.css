@@ -1796,8 +1796,9 @@ cursor: pointer;
 
 .scrollCounter
 {
-  padding: 80px 0;
+  padding: 100px 0;
   margin-bottom: 100px;
+  background-color: #101010;
 }
 .highlighted-count
 {
@@ -1807,15 +1808,67 @@ cursor: pointer;
 {
   color: white;
 }
+.scrollTitle
+{
+  padding-bottom: 50px;
+}
 .ms-animated
 {
-  font-size: 5rem;
+  font-size: 80px;
   font-weight: bold;
 }
 .scrollCounter .counter-sm
 {
-  font-size: 15px;
+  font-size: 18px;
   color: #8597a3;
+  position: relative;
+}
+.scrollCounter .counter-sm::before
+{
+  content: " ";
+  position: absolute;
+  bottom: -15px;
+  width: 50px;
+  height: 4px;
+  background-color: #faad00;
+}
+.counterRightCol
+{
+  padding-right: 160px;
+}
+.counterLeftCol
+{
+  padding-left: 160px;
+}
+.counterTextLeft
+{
+  text-align: left;
+}
+.counterTextCenter
+{
+  text-align: center;
+}
+.counterTextRight
+{
+  text-align: right;
+}
+@media screen and (max-width:1024px) {
+  .counterLeftCol, .counterRightCol, .counterCenterCol
+  {
+    padding: 50px 0;
+  }
+  .counterTextRight,.counterTextLeft,.counterTextCenter
+  {
+    text-align: center;
+  }
+  .scrollTitle
+  {
+  padding-bottom: 0;
+  }
+  .scrollCounter
+  {
+    padding: 60px 0;
+  }
 }
 .service-slide {
   display: block;
