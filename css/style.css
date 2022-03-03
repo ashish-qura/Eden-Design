@@ -1854,7 +1854,7 @@ cursor: pointer;
 }
 .slick-dots li button:before
 {
-  font-size: 14px;
+  font-size: 17px;
 }
 .slick-dots li.slick-active button:before
 {
