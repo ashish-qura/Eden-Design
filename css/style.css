@@ -1852,6 +1852,14 @@ cursor: pointer;
 {
   text-align: right;
 }
+.slick-dots li button:before
+{
+  font-size: 36px;
+}
+.slick-dots li.slick-active button:before
+{
+  color: #faad00;
+}
 @media screen and (max-width:1024px) {
   .counterLeftCol, .counterRightCol, .counterCenterCol
   {
@@ -2844,6 +2852,9 @@ and (orientation : landscape) {
   border-radius: 2px;
   background-color: rgb(255 193 7);
   -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, .5);
+}
+.our-service-right .nav::-webkit-scrollbar-track {
+  background: #ffedd9; 
 }
 .our-service-right .nav .cs-nav-link
 {
