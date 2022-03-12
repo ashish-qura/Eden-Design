@@ -588,8 +588,8 @@ ABOUT
 </div>
 
     <!-- script Start-->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+    <script src="js/jquery1.3.js"></script>
+    <script src="js/jquery-ui.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <!-- swiper js -->
@@ -696,12 +696,7 @@ mm.init();
 
 </script>
 <script>
-  	$("#v-pills-tab").mCustomScrollbar({
-			axis:"x",
-			  advanced:{
-				autoExpandHorizontalScroll:true
-			}
-		});
+  
   var $window = $(window);
 
 
@@ -711,7 +706,13 @@ if ($window.width() < 1000) {
 		$(".cs-nav-link").click(function(){
 			$(".cs-nav-link").not($(this)).removeClass('active');
 		
-		})
+		});
+    $("#v-pills-tab").mCustomScrollbar({
+			axis:"x",
+			  advanced:{
+				autoExpandHorizontalScroll:true
+			}
+		});
 	
 }
 }
