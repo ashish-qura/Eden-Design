@@ -2,30 +2,6 @@
 // Footer Credit Current Year
 document.getElementById("currentYear").innerHTML = new Date().getFullYear();
 
-
-var $window = $(window);
-
-
-function resize() {
-if ($window.width() < 1000) {
-	
-		$(".cs-nav-link").click(function(){
-			$(".cs-nav-link").not($(this)).removeClass('active');
-		
-		})
-		$("#v-pills-tab").mCustomScrollbar({
-			axis:"x",
-			  advanced:{
-				autoExpandHorizontalScroll:true
-			}
-		});
-}
-}
-
-$window
-.resize(resize)
-.trigger('resize');	
-
 $(document).ready(function(){
 
 	$(window).scroll(function() {

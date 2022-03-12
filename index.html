@@ -694,6 +694,31 @@ let mm = new MagnetMouse({
 mm.init();
 
 </script>
+<script>
+  var $window = $(window);
+
+
+function resize() {
+if ($window.width() < 1000) {
+	
+		$(".cs-nav-link").click(function(){
+			$(".cs-nav-link").not($(this)).removeClass('active');
+		
+		})
+		$("#v-pills-tab").mCustomScrollbar({
+			axis:"x",
+			  advanced:{
+				autoExpandHorizontalScroll:true
+			}
+		});
+}
+}
+
+$window
+.resize(resize)
+.trigger('resize');	
+
+</script>
 
 </body>
 </html>
