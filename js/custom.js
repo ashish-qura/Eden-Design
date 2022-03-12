@@ -7,7 +7,7 @@ var $window = $(window);
 
 
 function resize() {
-if ($window.width() < 514) {
+if ($window.width() < 1000) {
 	
 		$(".cs-nav-link").click(function(){
 			$(".cs-nav-link").not($(this)).removeClass('active');
@@ -20,8 +20,6 @@ if ($window.width() < 514) {
 			}
 		});
 }
-
-
 }
 
 $window
