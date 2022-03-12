@@ -8,7 +8,7 @@ var $window = $(window);
 
 function resize() {
 if ($window.width() < 514) {
-	alert("sjhfg")
+	
 		$(".cs-nav-link").click(function(){
 			$(".cs-nav-link").not($(this)).removeClass('active');
 		
