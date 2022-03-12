@@ -696,6 +696,12 @@ mm.init();
 
 </script>
 <script>
+  	$("#v-pills-tab").mCustomScrollbar({
+			axis:"x",
+			  advanced:{
+				autoExpandHorizontalScroll:true
+			}
+		});
   var $window = $(window);
 
 
@@ -706,12 +712,7 @@ if ($window.width() < 1000) {
 			$(".cs-nav-link").not($(this)).removeClass('active');
 		
 		})
-		$("#v-pills-tab").mCustomScrollbar({
-			axis:"x",
-			  advanced:{
-				autoExpandHorizontalScroll:true
-			}
-		});
+	
 }
 }
 
