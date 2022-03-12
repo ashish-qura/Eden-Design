@@ -2840,9 +2840,15 @@ and (orientation : landscape) {
 {
   flex-direction: row !important;
   flex-wrap: nowrap !important;
-  overflow-x: scroll;
   width: 300px;
   margin-bottom: 10px;
+}
+.max-width-example .contentss {
+  height: auto;
+  max-width: 100%;
+  min-width: 300px;
+  display: inline-block;
+  vertical-align: bottom;
 }
 .our-service-right .nav::-webkit-scrollbar {
   -webkit-appearance: none;

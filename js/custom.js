@@ -3,7 +3,30 @@
 document.getElementById("currentYear").innerHTML = new Date().getFullYear();
 
 
+var $window = $(window);
 
+
+function resize() {
+if ($window.width() < 514) {
+	alert("sjhfg")
+		$(".cs-nav-link").click(function(){
+			$(".cs-nav-link").not($(this)).removeClass('active');
+		
+		})
+		$("#v-pills-tab").mCustomScrollbar({
+			axis:"x",
+			  advanced:{
+				autoExpandHorizontalScroll:true
+			}
+		});
+}
+
+
+}
+
+$window
+.resize(resize)
+.trigger('resize');	
 
 $(document).ready(function(){
 
@@ -26,7 +49,7 @@ $(document).ready(function(){
 			$(".contentA").show();
 		}
 	});
-	
+
 $("#portfolio-flters li").click(function(){
 	var dataMap = $(this).data("map");
 	
