@@ -2595,13 +2595,13 @@ and (orientation : landscape) {
   display: inline-block;
   width: max-content;
 }
- .our-service-right .nav .cs-nav-link.active
+ /* .our-service-right .nav .cs-nav-link.active
 {
   padding: 0 15px;
   background-color: #e0e0e0;
   border-radius: 5px;
   border: none;
-}
+} */
 .our-service-right .nav .cs-nav-link:hover
 {
   padding: 0 15px;
@@ -2842,13 +2842,17 @@ and (orientation : landscape) {
   flex-wrap: nowrap !important;
   width: 300px;
   margin-bottom: 10px;
+  overflow-x: auto;
 }
-.max-width-example .contentss {
-  height: auto;
-  max-width: 100%;
-  min-width: 300px;
-  display: inline-block;
-  vertical-align: bottom;
+.our-service-right .nav::after
+{
+  content: "";
+  position: absolute;
+  height: 44px;
+  width: 30px;
+  right: 30px;
+  background: rgb(255,255,255);
+  background: linear-gradient(90deg, rgb(255 255 255 / 0%) 0%, rgba(255,255,255,1) 95%);
 }
 .our-service-right .nav::-webkit-scrollbar {
   -webkit-appearance: none;
@@ -2867,9 +2871,11 @@ and (orientation : landscape) {
 {
   height: 35px;
   line-height: 35px;
-  margin-bottom: 5px;
+  margin: 5px;
   padding-right: 15px;
-  
+  background-color: #fff7e5;
+    border-radius: 15px;
+    border: 1px solid orange;
 }
 .our-service-right .nav .cs-nav-link:nth-last-child()
 {
@@ -2887,9 +2893,8 @@ padding-right: 0;
 }
  .our-service-right .nav .cs-nav-link.active
 {
-  padding: 0 15px 0 0;
-  border: none;
-  background-color: transparent;
+  background-color: #faad00;
+  color: white;
 }
 .our-service-right .nav .cs-nav-link:hover
 {

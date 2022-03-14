@@ -10,7 +10,6 @@
     <!-- <link rel="stylesheet" href="css/owl-corousel.css"> -->
     <!-- <link rel="stylesheet" href="css/owl-theme.css">
     <link rel="stylesheet" href="css/owl-transition.css"> -->
-    <link rel="stylesheet" href="css/scroll-bar.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <!-- <link rel="stylesheet" href="css/swiperjs.css"/> -->
     <link rel="stylesheet" href="css/style.css">
@@ -588,8 +587,7 @@ ABOUT
 </div>
 
     <!-- script Start-->
-    <script src="js/jquery1.3.js"></script>
-    <script src="js/jquery-ui.js"></script>
+    <script src="js/jQuery.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <!-- swiper js -->
@@ -599,7 +597,6 @@ ABOUT
     <script src="js/vue.min.js"></script>
     <script src="js/magnetic.js"></script>
     <script src="js/custom.js"></script>
-    <script src="js/scroll-bar.js"></script>
 
     
     <!-- script End -->
@@ -695,33 +692,7 @@ let mm = new MagnetMouse({
 mm.init();
 
 </script>
-<script>
-  
-  var $window = $(window);
 
-
-function resize() {
-if ($window.width() < 1000) {
-	
-		$(".cs-nav-link").click(function(){
-			$(".cs-nav-link").not($(this)).removeClass('active');
-		
-		});
-    $("#v-pills-tab").mCustomScrollbar({
-			axis:"x",
-			  advanced:{
-				autoExpandHorizontalScroll:true
-			}
-		});
-	
-}
-}
-
-$window
-.resize(resize)
-.trigger('resize');	
-
-</script>
 
 </body>
 </html>
