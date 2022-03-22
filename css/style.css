@@ -2864,12 +2864,12 @@ and (orientation : landscape) {
 }
 .our-service-right .nav::-webkit-scrollbar-thumb {
   border-radius: 2px;
-  background-color: rgb(255 193 7);
+  background-color: rgb(189 189 189);
   -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, .5);
   box-shadow: 0 0 1px rgba(255, 255, 255, .5);
 }
 .our-service-right .nav::-webkit-scrollbar-track {
-  background: #ffedd9; 
+  background: #eaeaea; 
 }
 .our-service-right .nav .cs-nav-link
 {
