@@ -528,7 +528,7 @@ padding-left: 60px;
 }
 .menu li {
   display: inline-block;
-  margin: 0 17px;
+  margin: 0 23px;
 }
 .menu a {
   color: #fff !important;
@@ -1496,7 +1496,7 @@ li.current .content-slider p {
 {
   position: absolute;
   left: 50%;
-  top: 100%;
+  top: 106%;
   transform: translate(-144%, 0);
 }
 li.prev_slide .image-slider-work {
@@ -2087,7 +2087,7 @@ line-height: 7vw;
     min-height: inherit;
 }
 .srv-sld-blk {
-    padding: 140px 25px 25px;
+    padding: 280px 25px 25px;
     min-height: 420px;
 }
 .service-mbl-img {
@@ -2660,6 +2660,10 @@ and (orientation : landscape) {
   }
 }
 @media screen and (max-width: 768px) {
+  .order-match
+  {
+    order: -1;
+  }
   .slide-content-text p
   {
     line-height: normal;
@@ -2874,7 +2878,7 @@ and (orientation : landscape) {
   margin: 5px;
   padding-right: 15px;
   background-color: #fff7e5;
-    border-radius: 15px;
+    border-radius: 25px;
     border: 1px solid orange;
 }
 .our-service-right .nav .cs-nav-link:nth-last-child()
@@ -2894,11 +2898,10 @@ padding-right: 0;
  .our-service-right .nav .cs-nav-link.active
 {
   background-color: #faad00;
-  color: white;
+  color: rgb(0, 0, 0);
 }
 .our-service-right .nav .cs-nav-link:hover
 {
-  padding: 0 15px 0 0;
   border: none !important;
 }
 }
