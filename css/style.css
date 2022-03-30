@@ -1184,7 +1184,7 @@ margin-right: 8px;
 }
 .direction-links a:hover:before {
   opacity: 1;
-  transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -50%) scale(1.1);
 }
 .direction-links a img, .direction-links a svg {
   position: absolute;
