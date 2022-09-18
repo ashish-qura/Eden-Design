@@ -66,7 +66,7 @@ $("#portfolio-flters li").click(function(){
 });
 // Testimonial Slider
 
-var menu = ['Viraj Sanghavi', 'Tirth Patel', 'Swapnil Shah']
+var menu = ['Hitarth & Netra', 'Urv Patel', 'Tejash Trivedi', 'Dhwani Patel', 'Purav Patel']
 var mySwiper = new Swiper ('.swiper-container', {
 	 autoplay: {
     delay: 5000,
