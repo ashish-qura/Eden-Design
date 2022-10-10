@@ -2006,21 +2006,21 @@ cursor: pointer;
 }
 .slick-next
 {
-  background: url(https://img.hiddenbrains.com/public/local-cdn/images/sld-arw-sm-rt.png) no-repeat center;
+  background: url(https://img.hiddenbrains.com/public/local-cdn/images/sld-arw-sm-rt.png) no-repeat center !important;
 }
-.slick-next:hover
+/* .slick-next:hover
 {
   background: url(https://img.hiddenbrains.com/public/local-cdn/images/sld-arw-lg-lt.png) no-repeat center;
-}
+} */
 .slick-prev
 {
-  background: url(https://img.hiddenbrains.com/public/local-cdn/images/sld-arw-sm.png) no-repeat center;
+  background: url(https://img.hiddenbrains.com/public/local-cdn/images/sld-arw-sm.png) no-repeat center !important;
   right: 70px;
 }
-.slick-prev:hover
+/* .slick-prev:hover
 {
   background: url(https://img.hiddenbrains.com/public/local-cdn/images/sld-arw-lg-rt.png) no-repeat center;
-}
+} */
 
 /* Circle span */
 .item-slider .direction-links
