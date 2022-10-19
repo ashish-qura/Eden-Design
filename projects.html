@@ -900,7 +900,7 @@
         <!-- code here -->
         <div class="card footer-form">
            <h2 class="main-head-eden">Lets get in touch</h2>
-            <form class="card-form">
+            <form class="card-form" onsubmit="sendEmail(); reset(); return false;">
                 
                     <div class="row justify-content-between">
                         <div class="input input-w45">
@@ -926,7 +926,7 @@
                         <div class="input sendBtn-form">
                             <textarea class="input-field text-area-inf eden-inf" id="comment-typewirte" rows="3" value="My project is related.."></textarea>
                             <label class="input-label">Write Message*</label>
-                            <button type="button" class="btn btn-circle btn-xl">
+                            <button type="submit" class="btn btn-circle btn-xl">
                               <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                           viewBox="0 0 491.022 491.022" style="enable-background:new 0 0 491.022 491.022;" xml:space="preserve">
                                         <g>

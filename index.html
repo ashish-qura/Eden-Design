@@ -399,7 +399,7 @@ ABOUT
     </p>
     
         <h2 class="main-head-eden our-work-patch">
-          Projects We Work For
+          Projects we work for
         </h2>
        <div class="nav flex-column nav-pills me-3 nav-wrapper-block" id="v-pills-tab" role="tablist" aria-orientation="vertical">
         <a class="cs-nav-link active" id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true"> <span class="long-arrow-right"></span>  <span class="cs-nav-tabtext"> Residential Project</span></a>
@@ -498,7 +498,7 @@ ABOUT
         <!-- code here -->
         <div class="card footer-form">
            <h2 class="main-head-eden">Lets get in touch</h2>
-            <form class="card-form">
+            <form class="card-form" onsubmit="sendEmail(); reset(); return false;">
                 
                     <div class="row justify-content-between">
                         <div class="input input-w45">
@@ -524,7 +524,7 @@ ABOUT
                         <div class="input sendBtn-form">
                             <textarea class="input-field text-area-inf eden-inf" id="comment-typewirte" rows="3" value="My project is related.."></textarea>
                             <label class="input-label">Write Message*</label>
-                            <button type="button" class="btn btn-circle btn-xl">
+                            <button type="submit" class="btn btn-circle btn-xl">
                               <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                                           viewBox="0 0 491.022 491.022" style="enable-background:new 0 0 491.022 491.022;" xml:space="preserve">
                                         <g>
@@ -629,9 +629,9 @@ ABOUT
     <!-- Swiperjs end -->
     <script src="js/vue.min.js"></script>
     <script src="js/magnetic.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="js/custom.js"></script>
 
-    
     <!-- script End -->
     <script>
       var app = new Vue({

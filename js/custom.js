@@ -64,6 +64,28 @@ $("#portfolio-flters li").click(function(){
     //             $(this).children('.tooltip-map').fadeOut(100);
     //         })
 });
+// Contact Form
+function sendEmail(){
+let emailUname = document.getElementById("name-typewirte").value;
+let emailMob = document.getElementById("phone-typewirte").value;
+let emailComp = document.getElementById("company-typewirte").value;
+let emailEmail = document.getElementById("email-typewirte").value;
+let emailBody = document.getElementById("comment-typewirte").value;
+let bodyContent = "Name:" + emailUname + "<br/> Email:" + emailEmail + "<br/> Mobile Number:" + emailMob + "<br/> Company Name:" +emailComp+ "<br/>" + emailBody;
+
+	Email.send({
+		Host : "smtp.elasticemail.com",
+		Username : "edendc.projects@gmail.com",
+		Password : "C581280E24B6D4DC0BDB6635E47EF62799AE",
+		To : 'edendc.projects@gmail.com',
+		From : "edendc.projects@gmail.com",
+		Subject : emailUname,
+		Body : bodyContent
+	}).then(
+	  message => alert(message)
+	);
+}
+
 // Testimonial Slider
 
 var menu = ['Hitarth & Netra', 'Urv Patel', 'Tejash Trivedi', 'Dhwani Patel', 'Purav Patel']
