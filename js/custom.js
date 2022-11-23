@@ -88,7 +88,7 @@ let bodyContent = "Name:" + emailUname + "<br/> Email:" + emailEmail + "<br/> Mo
 
 // Testimonial Slider
 
-var menu = ['Hitarth & Netra', 'Urv Patel', 'Tejash Trivedi', 'Dhwani Patel', 'Purav Patel']
+var menu = ['Hitarth & Netra', 'Urv Patel', 'Tejas Trivedi', 'Dhwani Patel', 'Purav Patel']
 var mySwiper = new Swiper ('.swiper-container', {
 	 autoplay: {
     delay: 5000,
